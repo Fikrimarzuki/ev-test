@@ -1,5 +1,15 @@
 <template>
-  <NuxtLayout />
+  <NuxtErrorBoundary>
+    <NuxtLayout />
+
+    <template #error="{ error }">
+      <div>
+        <p>Oops, there's something wrong :/</p>
+        <p>{{ error.message }}</p>
+        <p><button @click="recoverFromError(error)">Try again</button></p>
+      </div>
+    </template>
+  </NuxtErrorBoundary>
 </template>
 
 <script setup lang="ts">
@@ -13,6 +23,10 @@
 //       to.meta.pageTransition.name = +to.params.id > +from.params.id ? 'slide-left' : 'slide-right'
 //   }
 // })
+const recoverFromError = (error: any) => {
+  // Try to resolve the error here
+  error.value = null;
+}
 </script>
 
 <!-- <style>

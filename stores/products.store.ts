@@ -2,8 +2,18 @@ import { defineStore } from "pinia";
 
 export const useProductStore = defineStore("products", () => {
   const products = ref<Product[] | null>(null)
+
+  const fetchProducts = async () => {
+    try {
+      
+    } catch(e) {
+
+    }
+  }
+
   return {
-    products
+    products,
+    fetchProducts
   }
 })
 

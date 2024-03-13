@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  modules: ["@pinia/nuxt", "@nuxt/image", "nuxt-icon"],
   app: {
     head: {
       charset: "utf-8",
@@ -10,15 +11,15 @@ export default defineNuxtConfig({
     pageTransition: { name: "page", mode: "out-in" },
     layoutTransition: { name: "layout", mode: "out-in" }
   },
-  modules: [
-    "@pinia/nuxt"
-  ],
   css: ["~/assets/scss/main.scss"],
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: "@use '~/assets/scss/_color.scss' as *;"
+          additionalData: `
+            @use '~/assets/scss/_color.scss' as *;
+            @use '~/assets/fonts/_fonts.scss' as *;
+          `
         }
       }
     }
@@ -28,5 +29,8 @@ export default defineNuxtConfig({
   },
   imports: {
     dirs: ["composables"]
+  },
+  runtimeConfig: {
+    BASE_URL: "http://localhost:3000"
   }
 })

@@ -1,0 +1,285 @@
+{
+  "users": [],
+  "products": [
+    {
+      "id": 1,
+      "name": "Travel Mug",
+      "slug": "travel-mug",
+      "price": 310000,
+      "discount_price": 250000,
+      "category": ["drinkware", "travels"],
+      "description": "This insulated travel mug keeps your drinks hot or cold for hours. Perfect for on-the-go!",
+      "images": [
+        "https://img.freepik.com/free-photo/vertical-shot-bottle-fresh-water-abandon-castle-istria-croatia_181624-7167.jpg?w=740&t=st=1710260127~exp=1710260727~hmac=e93a410c746d2b032e1f9bc86d9578e3afb364f21fb176cd05fa5d9c6dfeddc0",
+        "https://img.freepik.com/premium-photo/picnic-autumn-forest-against-background-mountains-retro-thermos-mug-scarf-orange-leaves-fall-has-come_273094-593.jpg?w=740",
+        "https://img.freepik.com/free-photo/close-up-woman-holding-thermos-nature_23-2148523459.jpg?w=740&t=st=1710260134~exp=1710260734~hmac=fbfc2002f794e47cbf8933545a67027138f7c01f8f6e4f4af7e4f846492c0542"
+      ],
+      "variations": [
+        {
+          "id": 11,
+          "name": "Red",
+          "image": "https://img.freepik.com/free-photo/red-paper-cup-stands-snowed-bench-alley_1304-3349.jpg?w=826&t=st=1710260214~exp=1710260814~hmac=cacfa2179f93b887188dad293f60e7fb0826ffeba651e8eda38053eb0b8ffc2a",
+          "price": 310000
+        },
+        {
+          "id": 12,
+          "name": "Blue",
+          "image": "https://img.freepik.com/free-photo/thermal-bottle_1203-3566.jpg?t=st=1710260251~exp=1710263851~hmac=91331b3a961af80bd78e6c99f964866389bcdd5edadbbde1fa5a8581f5b20fa4&w=740",
+          "price": 310000
+        },
+        {
+          "id": 13,
+          "name": "Black",
+          "image": "https://img.freepik.com/free-photo/close-up-woman-holding-thermos-nature_23-2148523459.jpg?w=740&t=st=1710260134~exp=1710260734~hmac=fbfc2002f794e47cbf8933545a67027138f7c01f8f6e4f4af7e4f846492c0542",
+          "price": 310000
+        }
+      ],
+      "stock": 100
+    },
+    {
+      "id": 2,
+      "name": "Wireless Headphones",
+      "slug": "wireless-headphones",
+      "price": 1250000,
+      "discount_price": null,
+      "category": ["electronics", "computers"],
+      "description": "Enjoy crystal-clear sound and wireless freedom with these comfortable headphones.",
+      "images": [
+        "https://img.freepik.com/free-vector/white-wireless-headphones-set_1284-71984.jpg?w=900&t=st=1710261868~exp=1710262468~hmac=1eb4348c24d67d72bc37a0ecfe2f4fa9eb06e200c8157d96f8869f7a486b387e",
+        "https://img.freepik.com/free-vector/realistic-set-different-wired-wireless-audio-equipment-music-listening-smartphones-gaming-isolated-vector-illustration_1284-81532.jpg?w=1060&t=st=1710261887~exp=1710262487~hmac=472731507c9e3201150c84a51afdfab9ce0b323189003255bfb13f2435faf317"
+      ],
+      "variations": [
+        {
+          "id": 21,
+          "name": "Black",
+          "image": "https://img.freepik.com/free-psd/levitating-headphones-still-life_23-2150806982.jpg?w=740&t=st=1710261915~exp=1710262515~hmac=93c7eadda868e1eb7f560b19130ad8a5a05444a18fefc48a83b286845ac475ba",
+          "price": 1250000
+        },
+        {
+          "id": 22,
+          "name": "White",
+          "image": "https://img.freepik.com/free-psd/beautiful-gaming-headphone-isolated-transparent-background_191095-12530.jpg?w=826&t=st=1710261939~exp=1710262539~hmac=bf74bf5092825faa856d9d91b77ecf4a8ca1f64e970b2e26be5a2ebaae7a051c",
+          "price": 1250000
+        }
+      ],
+      "stock": 50
+    },
+    {
+      "id": 3,
+      "name": "T-Shirt",
+      "slug": "t-shirt",
+      "price": 240000,
+      "discount_price": null,
+      "category": ["clothes", "best-seller"],
+      "description": "A comfortable and stylish t-shirt for everyday wear.",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/2781/1884/products/mens-organic-crew-t-shirt-white_300x.jpg?v=1659747320",
+        "https://i.everlane.com/products/m009323_00.jpg",
+        "https://img.ssense.com/en-us/products/uniqlo-u-crew-neck-t-shirt-black/1173233_1_b.jpg"
+      ],
+      "variations": [
+        {
+          "id": 31,
+          "name": "White",
+          "image": "https://cdn.shopify.com/s/files/1/2781/1884/products/mens-organic-crew-t-shirt-white_300x.jpg?v=1659747320",
+          "price": 240000
+        },
+        {
+          "id": 32,
+          "name": "Blue",
+          "image": "https://i.everlane.com/products/m009323_00.jpg",
+          "price": 240000
+        },
+        {
+          "id": 33,
+          "name": "Black",
+          "image": "https://img.ssense.com/en-us/products/uniqlo-u-crew-neck-t-shirt-black/1173233_1_b.jpg",
+          "price": 240000
+        }
+      ],
+      "stock": 200
+    },
+    {
+      "id": 4,
+      "name": "Laptop",
+      "slug": "laptop",
+      "price": 7800000,
+      "discount_price": null,
+      "category": ["electronics", "computers"],
+      "description": "A powerful and portable laptop for work, school, or entertainment.",
+      "images": [
+        "https://www.apple.com/macbook-air/images/home/2023_09/hero_static.jpg",
+        "https://www.asus.com/content/dam/web/global/products/laptops/rog-strix-g15-advantage-edition/images/g15ae-hero.jpg"
+      ],
+      "variations": [
+        {
+          "id": 41,
+          "name": "Silver",
+          "image": "https://www.apple.com/macbook-air/images/home/2023_09/hero_static.jpg",
+          "price": 7800000
+        },
+        {
+          "id": 42,
+          "name": "Black",
+          "image": "https://www.asus.com/content/dam/web/global/products/laptops/rog-strix-g15-advantage-edition/images/g15ae-hero.jpg",
+          "price": 7800000
+        }
+      ],
+      "stock": 30
+    },
+    {
+      "id": 5,
+      "name": "Notebook",
+      "slug": "notebook",
+      "price": 150000,
+      "discount_price": null,
+      "category": ["supplies"],
+      "description": "A high-quality notebook for writing, journaling, or taking notes.",
+      "images": [
+        "https://www.amazon.com/Five-Star-Notebook-Subject-73198/dp/B071CR4WYM",
+        "https://www.officedepot.com/a/products/474922/Just-Basics-Poly-Spiral-Notebook-8/"
+      ],
+      "variations": [
+        {
+          "id": 51,
+          "name": "Blue",
+          "image": "https://www.amazon.com/Five-Star-Notebook-Subject-73198/dp/B071CR4WYM",
+          "price": 150000
+        },
+        {
+          "id": 52,
+          "name": "Red",
+          "image": "https://www.officedepot.com/a/products/474922/Just-Basics-Poly-Spiral-Notebook-8/",
+          "price": 150000
+        }
+      ],
+      "stock": 150
+    },
+    {
+      "id": 6,
+      "name": "Water Bottle",
+      "slug": "water-bottle",
+      "price": 240000,
+      "discount_price": null,
+      "category": ["drinkware"],
+      "description": "A reusable water bottle to stay hydrated on the go.",
+      "images": [
+        "https://www.thespruceeats.com/best-reusable-water-bottles-4768856"
+      ],
+      "variations": [],
+      "stock": 75
+    },
+    {
+      "id": 7,
+      "name": "Desk Lamp",
+      "slug": "desk-lamp",
+      "price": 470000,
+      "discount_price": null,
+      "category": ["home-decoration"],
+      "description": "A stylish and functional desk lamp for illuminating your workspace.",
+      "images": [
+        "https://www.ikea.com/us/en/images/products/tarno-table-lamp__0702384_PE146641_S5.JPG",
+        "https://www.westinghouselighting.com/Content/Images/Products/Thumbs/6305-60.jpg"
+      ],
+      "variations": [
+        {
+          "id": 81,
+          "name": "Black",
+          "image": "https://www.ikea.com/us/en/images/products/tarno-table-lamp__0702384_PE146641_S5.JPG",
+          "price": 470000
+        },
+        {
+          "id": 82,
+          "name": "White",
+          "image": "https://www.westinghouselighting.com/Content/Images/Products/Thumbs/6305-60.jpg",
+          "price": 470000
+        }
+      ],
+      "stock": 40
+    },
+    {
+      "id": 8,
+      "name": "Backpack",
+      "slug": "backpack",
+      "price": 620000,
+      "discount_price": null,
+      "category": ["bags"],
+      "description": "A durable and stylish backpack for everyday use or travel.",
+      "images": [
+        "https://images.northface.com/is/image/TheNorthFace/NF0A52ET_JK3_hero.jpg",
+        "https://www.jansport.com/dw/image/v2/ABBH_ST/janska-superbreak-backpack-jnssp21/janska-superbreak-backpack-jnssp21-1_jpo.jpg"
+      ],
+      "variations": [
+        {
+          "id": 91,
+          "name": "Black",
+          "image": "https://images.northface.com/is/image/TheNorthFace/NF0A52ET_JK3_hero.jpg",
+          "price": 620000
+        },
+        {
+          "id": 92,
+          "name": "Blue",
+          "image": "https://www.jansport.com/dw/image/v2/ABBH_ST/janska-superbreak-backpack-jnssp21/janska-superbreak-backpack-jnssp21-1_jpo.jpg",
+          "price": 620000
+        }
+      ],
+      "stock": 25
+    },
+    {
+      "id": 9,
+      "name": "Plant",
+      "slug": "plant",
+      "price": 310000,
+      "discount_price": null,
+      "category": ["home-decoration"],
+      "description": "A beautiful and low-maintenance plant to add life to your space.",
+      "images": [
+        "https://www.thespruce.com/thmb/02zOvjvY3zleKBRJG7jv3ouXbQ=/1500x1000/smart/filters:no_upscale()/snake-plant-mother-in-laws-tongue-dracaena-trifasciata-5b93f02ec2f0d24a3a80dbe9d3b2b8f3.jpg"
+      ],
+      "variations": [
+        {
+          "id": 101,
+          "name": "Snake Plant",
+          "image": "https://www.marthastewart.com/8031179/snake-plant-grow-guide",
+          "price": 310000
+        },
+        {
+          "id": 102,
+          "name": "Succulent",
+          "image": "https://www.amazon.com/Shop-Succulents-Hand-Selected-Health/dp/B07Y94C6ZJ",
+          "price": 310000
+        }
+      ],
+      "stock": 50
+    },
+    {
+      "id": 11,
+      "name": "Ceramic Plant Pot",
+      "slug": "ceramic-plant-pot",
+      "price": 240000,
+      "discount_price": null, 
+      "category": ["home-decoration", "gardening"],
+      "description": "A stylish and sturdy ceramic plant pot for your snake plant or other houseplants. Available in various sizes and colors.",
+      "images": [
+        "https://www.west elm.com/images/westinelm/products/restsolutions/9010603/0380/medium-round-ceramic-planter-white-a.jpg",
+        "https://www.ikea.com/us/en/images/products/uraskog-plant-pot__0604330_PE692294_S5.JPG"
+      ],
+      "variations": [
+        {
+          "id": 111,
+          "name": "White",
+          "image": "https://www.west elm.com/images/westinelm/products/restsolutions/9010603/0380/medium-round-ceramic-planter-white-a.jpg",
+          "price": 240000
+        },
+        {
+          "id": 112,
+          "name": "Terracotta",
+          "image": "https://www.ikea.com/us/en/images/products/uraskog-plant-pot__0604330_PE692294_S5.JPG",
+          "price": 200000
+        }
+      ],
+      "stock": 80
+    }
+  ],
+  "carts": []
+}

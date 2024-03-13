@@ -1,285 +1,1025 @@
 {
-  "users": [],
-  "products": [
+  "categories": [
     {
-      "id": 1,
-      "name": "Travel Mug",
-      "slug": "travel-mug",
-      "price": 19.99,
-      "discount_price": 15.99,
-      "category": ["Drinkware", "Travel"],
-      "description": "This insulated travel mug keeps your drinks hot or cold for hours. Perfect for on-the-go!",
-      "images": [
-        "https://s7d2.scene7.com/is/image/Stanleybrand/208703_HERO?$pdp_hero$",
-        "https://images-na.ssl-images-amazon.com/images/I/71i7xDfZ5NL._AC_SX425_.jpg",
-        "https://www.thermos.com/medias/Thermos-Stainless-King-Travel-Mug-16oz-Black-THERMOS-16KBG.jpg?pbw=0&is=h/600/600/0&濛=djVuqdBkcnfqqt8mFmLodtseb0OmEaC5gFKM1C"
-      ],
-      "variations": [
-        {
-          "id": 11,
-          "name": "Red",
-          "image": "https://s7d2.scene7.com/is/image/Stanleybrand/208703_HERO?$pdp_hero$",
-          "price": 19.99
-        },
-        {
-          "id": 12,
-          "name": "Blue",
-          "image": "https://images-na.ssl-images-amazon.com/images/I/71i7xDfZ5NL._AC_SX425_.jpg",
-          "price": 19.99
-        },
-        {
-          "id": 13,
-          "name": "Black",
-          "image": "https://www.thermos.com/medias/Thermos-Stainless-King-Travel-Mug-16oz-Black-THERMOS-16KBG.jpg?pbw=0&is=h/600/600/0&濛=djVuqdBkcnfqqt8mFmLodtseb0OmEaC5gFKM1C",
-          "price": 19.99
-        }
-      ],
-      "stock": 100
+      "id": "d2b223da-10a7-45fb-93e1-891c194deb5a",
+      "title": "Smartphones",
+      "slug": "smartphones"
     },
     {
-      "id": 2,
-      "name": "Wireless Headphones",
-      "slug": "wireless-headphones",
-      "price": 79.99,
-      "discount_price": null,
-      "category": ["Electronics", "Audio"],
-      "description": "Enjoy crystal-clear sound and wireless freedom with these comfortable headphones.",
-      "images": [
-        "https://www.sony.com/electronics/image/cta/headphones/wireless/wh-1000xm5-black_thumb.jpg",
-        "https://www.bose.com/content/dam/bose/website/products/noise-cancelling-headphones/quietcomfort-45/qc45_black_hero.jpg"
-      ],
-      "variations": [
-        {
-          "id": 21,
-          "name": "Black",
-          "image": "https://www.sony.com/electronics/image/cta/headphones/wireless/wh-1000xm5-black_thumb.jpg",
-          "price": 79.99
-        },
-        {
-          "id": 22,
-          "name": "White",
-          "image": "https://www.bose.com/content/dam/bose/website/products/noise-cancelling-headphones/quietcomfort-45/qc45_white_hero.jpg",
-          "price": 79.99
-        }
-      ],
-      "stock": 50
+      "id": "b088fec0-8303-4023-8676-2cbb930df8e7",
+      "title": "Tablets",
+      "slug": "tablets"
     },
     {
-      "id": 3,
-      "name": "T-Shirt",
-      "slug": "t-shirt",
-      "price": 14.99,
-      "discount_price": null,
-      "category": ["Clothing"],
-      "description": "A comfortable and stylish t-shirt for everyday wear.",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/2781/1884/products/mens-organic-crew-t-shirt-white_300x.jpg?v=1659747320",
-        "https://i.everlane.com/products/m009323_00.jpg",
-        "https://img.ssense.com/en-us/products/uniqlo-u-crew-neck-t-shirt-black/1173233_1_b.jpg"
-      ],
-      "variations": [
-        {
-          "id": 31,
-          "name": "White",
-          "image": "https://cdn.shopify.com/s/files/1/2781/1884/products/mens-organic-crew-t-shirt-white_300x.jpg?v=1659747320",
-          "price": 14.99
-        },
-        {
-          "id": 32,
-          "name": "Blue",
-          "image": "https://i.everlane.com/products/m009323_00.jpg",
-          "price": 14.99
-        },
-        {
-          "id": 33,
-          "name": "Black",
-          "image": "https://img.ssense.com/en-us/products/uniqlo-u-crew-neck-t-shirt-black/1173233_1_b.jpg",
-          "price": 14.99
-        }
-      ],
-      "stock": 200
+      "id": "b1014f3d-7f02-45ef-8e91-9d5532dca31d",
+      "title": "Watches",
+      "slug": "watches"
     },
     {
-      "id": 4,
-      "name": "Laptop",
-      "slug": "laptop",
-      "price": 499.99,
-      "discount_price": null,
-      "category": ["Electronics", "Computers"],
-      "description": "A powerful and portable laptop for work, school, or entertainment.",
-      "images": [
-        "https://www.apple.com/macbook-air/images/home/2023_09/hero_static.jpg",
-        "https://www.asus.com/content/dam/web/global/products/laptops/rog-strix-g15-advantage-edition/images/g15ae-hero.jpg"
-      ],
-      "variations": [
-        {
-          "id": 41,
-          "name": "Silver",
-          "image": "https://www.apple.com/macbook-air/images/home/2023_09/hero_static.jpg",
-          "price": 499.99
-        },
-        {
-          "id": 42,
-          "name": "Black",
-          "image": "https://www.asus.com/content/dam/web/global/products/laptops/rog-strix-g15-advantage-edition/images/g15ae-hero.jpg",
-          "price": 499.99
-        }
-      ],
-      "stock": 30
+      "id": "db4faf1a-d298-4bad-92d5-19ab6a3697ab",
+      "title": "Galaxy Buds",
+      "slug": "galaxy-buds"
     },
     {
-      "id": 5,
-      "name": "Notebook",
-      "slug": "notebook",
-      "price": 9.99,
-      "discount_price": null,
-      "category": ["Office Supplies"],
-      "description": "A high-quality notebook for writing, journaling, or taking notes.",
-      "images": [
-        "https://www.amazon.com/Five-Star-Notebook-Subject-73198/dp/B071CR4WYM",
-        "https://www.officedepot.com/a/products/474922/Just-Basics-Poly-Spiral-Notebook-8/"
-      ],
-      "variations": [
-        {
-          "id": 51,
-          "name": "Blue",
-          "image": "https://www.amazon.com/Five-Star-Notebook-Subject-73198/dp/B071CR4WYM",
-          "price": 9.99
-        },
-        {
-          "id": 52,
-          "name": "Red",
-          "image": "https://www.officedepot.com/a/products/474922/Just-Basics-Poly-Spiral-Notebook-8/",
-          "price": 9.99
-        }
-      ],
-      "stock": 150
-    },
-    {
-      "id": 6,
-      "name": "Water Bottle",
-      "slug": "water-bottle",
-      "price": 14.99,
-      "discount_price": null,
-      "category": ["Drinkware"],
-      "description": "A reusable water bottle to stay hydrated on the go.",
-      "images": [
-        "https://www.thespruceeats.com/best-reusable-water-bottles-4768856"
-      ],
-      "variations": [],
-      "stock": 75
-    },
-    {
-      "id": 7,
-      "name": "Desk Lamp",
-      "slug": "desk-lamp",
-      "price": 29.99,
-      "discount_price": null,
-      "category": ["Lighting", "Home Office"],
-      "description": "A stylish and functional desk lamp for illuminating your workspace.",
-      "images": [
-        "https://www.ikea.com/us/en/images/products/tarno-table-lamp__0702384_PE146641_S5.JPG",
-        "https://www.westinghouselighting.com/Content/Images/Products/Thumbs/6305-60.jpg"
-      ],
-      "variations": [
-        {
-          "id": 81,
-          "name": "Black",
-          "image": "https://www.ikea.com/us/en/images/products/tarno-table-lamp__0702384_PE146641_S5.JPG",
-          "price": 29.99
-        },
-        {
-          "id": 82,
-          "name": "White",
-          "image": "https://www.westinghouselighting.com/Content/Images/Products/Thumbs/6305-60.jpg",
-          "price": 29.99
-        }
-      ],
-      "stock": 40
-    },
-    {
-      "id": 8,
-      "name": "Backpack",
-      "slug": "backpack",
-      "price": 39.99,
-      "discount_price": null,
-      "category": ["Bags"],
-      "description": "A durable and stylish backpack for everyday use or travel.",
-      "images": [
-        "https://images.northface.com/is/image/TheNorthFace/NF0A52ET_JK3_hero.jpg",
-        "https://www.jansport.com/dw/image/v2/ABBH_ST/janska-superbreak-backpack-jnssp21/janska-superbreak-backpack-jnssp21-1_jpo.jpg"
-      ],
-      "variations": [
-        {
-          "id": 91,
-          "name": "Black",
-          "image": "https://images.northface.com/is/image/TheNorthFace/NF0A52ET_JK3_hero.jpg",
-          "price": 39.99
-        },
-        {
-          "id": 92,
-          "name": "Blue",
-          "image": "https://www.jansport.com/dw/image/v2/ABBH_ST/janska-superbreak-backpack-jnssp21/janska-superbreak-backpack-jnssp21-1_jpo.jpg",
-          "price": 39.99
-        }
-      ],
-      "stock": 25
-    },
-    {
-      "id": 9,
-      "name": "Plant",
-      "slug": "plant",
-      "price": 19.99,
-      "discount_price": null,
-      "category": ["Home Decor"],
-      "description": "A beautiful and low-maintenance plant to add life to your space.",
-      "images": [
-        "https://www.thespruce.com/thmb/02zOvjvY3zleKBRJG7jv3ouXbQ=/1500x1000/smart/filters:no_upscale()/snake-plant-mother-in-laws-tongue-dracaena-trifasciata-5b93f02ec2f0d24a3a80dbe9d3b2b8f3.jpg"
-      ],
-      "variations": [
-        {
-          "id": 101,
-          "name": "Snake Plant",
-          "image": "https://www.marthastewart.com/8031179/snake-plant-grow-guide",
-          "price": 19.99
-        },
-        {
-          "id": 102,
-          "name": "Succulent",
-          "image": "https://www.amazon.com/Shop-Succulents-Hand-Selected-Health/dp/B07Y94C6ZJ",
-          "price": 19.99
-        }
-      ],
-      "stock": 50
-    },
-    {
-      "id": 11,
-      "name": "Ceramic Plant Pot",
-      "slug": "ceramic-plant-pot",
-      "price": 14.99,
-      "discount_price": null, 
-      "category": ["Home Decor", "Gardening"],
-      "description": "A stylish and sturdy ceramic plant pot for your snake plant or other houseplants. Available in various sizes and colors.",
-      "images": [
-        "https://www.west elm.com/images/westinelm/products/restsolutions/9010603/0380/medium-round-ceramic-planter-white-a.jpg",
-        "https://www.ikea.com/us/en/images/products/uraskog-plant-pot__0604330_PE692294_S5.JPG"
-      ],
-      "variations": [
-        {
-          "id": 111,
-          "name": "White",
-          "image": "https://www.west elm.com/images/westinelm/products/restsolutions/9010603/0380/medium-round-ceramic-planter-white-a.jpg",
-          "price": 14.99
-        },
-        {
-          "id": 112,
-          "name": "Terracotta",
-          "image": "https://www.ikea.com/us/en/images/products/uraskog-plant-pot__0604330_PE692294_S5.JPG",
-          "price": 12.99
-        }
-      ],
-      "stock": 80
+      "id": "afd82765-382a-4b41-9e1f-a51ead67643a",
+      "title": "Aksesori",
+      "slug": "aksesori"
     }
   ],
-  "carts": []
+  "product-types": [
+    {
+      "id": "d602e7f0-8d32-4f9c-b699-56028fa56bcf",
+      "title": "Galaxy S",
+      "slug": "galaxy-s",
+      "short_desc": "Chipset ercepat dan kamera terbaik di Galaxy",
+      "category": "smartphones",
+      "image": "https://images.samsung.com/is/image/samsung/assets/id/2401/pfs/Visual_LNB_Galaxy-S_pc.png?$N_96_PNG$"
+    },
+    {
+      "id": "c8d3995d-ca61-495c-baaf-01804a0996de",
+      "title": "Galaxy Z",
+      "slug": "galaxy-z",
+      "short_desc": "Join the flip side",
+      "category": "smartphones",
+      "image": "https://images.samsung.com/is/image/samsung/assets/id/2307/pfs/Visual-LNB_Galaxy-Z_pc.png?$N_96_PNG$"
+    },
+    {
+      "id": "2abca80f-f43d-4a99-8d75-3c75ac3502d5",
+      "title": "Galaxy A",
+      "slug": "galaxy-a",
+      "short_desc": "Awesome is for everyone",
+      "category": "smartphones",
+      "image": "https://images.samsung.com/is/image/samsung/assets/id/2307/pfs/GalaxyA55-5G_LNB_MO_47X96_iceblue.png?$N_96_PNG$"
+    },
+    {
+      "id": "181a5dbd-1ca8-44c1-ad9d-70ffbde7d171",
+      "title": "Galaxy M",
+      "slug": "galaxy-m",
+      "short_desc": "Kekuatan dan kecepatan dengan harga terbaik untuk Anda",
+      "category": "smartphones",
+      "image": "https://images.samsung.com/is/image/samsung/assets/id/2307/pfs/GalaxyM14_5G_LNB_PC_47X96.png?$N_96_PNG$"
+    },
+    {
+      "id": "0a427ad3-a641-4169-a1dd-3917aa378fb0",
+      "title": "Galaxy Tab S",
+      "slug": "galaxy-tab-s",
+      "short_desc": "The new standard of premium tablets",
+      "category": "tablets",
+      "image": "https://images.samsung.com/is/image/samsung/assets/id/2307/pcd/Galaxy_Tab_LNB_01_Galxy_Tab_S_PC.png?$N_96_PNG$"
+    },
+    {
+      "id": "5f7b522d-aa21-407a-bc13-e7ff7bd09610",
+      "title": "Galaxy Tab A",
+      "slug": "galaxy-tab-a",
+      "short_desc": "Reliable functionality for everyday use",
+      "category": "tablets",
+      "image": "https://images.samsung.com/is/image/samsung/assets/id/2307/pcd/Galaxy_Tab_LNB_02_Galxy_Tab_A_PC.png?$N_96_PNG$"
+    },
+    {
+      "id": "11471f8d-515b-48c9-9ad9-b26f51aeb3bf",
+      "title": "Galaxy Watch",
+      "slug": "galaxy-watch",
+      "short_desc": "Start your everyday wellness journey",
+      "category": "watches",
+      "image": "https://images.samsung.com/is/image/samsung/assets/id/2307/pcd/LNB_Galaxy_Watch6_pc.png?$N_96_PNG$"
+    },
+    {
+      "id": "3fe65477-c8d4-4c03-91c2-3d1bd636484d",
+      "title": "Galaxy Watch Classic",
+      "slug": "galaxy-watch-classic",
+      "short_desc": "Timeless aesthetics combined with cutting-edge smartwatch tech",
+      "category": "watches",
+      "image": "https://images.samsung.com/is/image/samsung/assets/id/2307/pcd/LNB_Galaxy_Watch6_Classic_pc.png?$N_96_PNG$"
+    },
+    {
+      "id": "31f98224-ea5f-4689-8532-a4a67ecac2a6",
+      "title": "Galaxy Watch Pro",
+      "slug": "galaxy-watch-pro",
+      "short_desc": "Smartwatch designed for adventures",
+      "category": "watches",
+      "image": "https://images.samsung.com/is/image/samsung/assets/id/2208/pcd/watches/Watch5Pro_pc.png?$N_96_PNG$"
+    },
+    {
+      "id": "1fdbdf3d-e860-476d-9f4d-ff26c5c0226c",
+      "title": "Galaxy Fit",
+      "slug": "galaxy-fit",
+      "short_desc": "Built to fit your active lifestyle",
+      "category": "watches",
+      "image": "https://images.samsung.com/is/image/samsung/assets/id/2208/pcd/watches/Visual_LNB_Fit3_PC.png?$N_96_PNG$"
+    },
+    {
+      "id": "29393bba-c26e-499e-8bd9-7eea0129b9c3",
+      "title": "Galaxy Buds 2 Pro",
+      "slug": "galaxy-buds-2-pro",
+      "short_desc": "The ultimate Hi-Fi sound",
+      "category": "galaxy-buds",
+      "image": "https://images.samsung.com/is/image/samsung/assets/id/2208/pcd/audio-sound/Buds2pro_pc.png?$N_96_PNG$"
+    },
+    {
+      "id": "e3367163-a6ca-4880-b6cb-c53ac3a19990",
+      "title": "Galaxy Buds2",
+      "slug": "galaxy-buds2",
+      "short_desc": "Well-balanced sound",
+      "category": "galaxy-buds",
+      "image": "https://images.samsung.com/is/image/samsung/assets/id/2208/pcd/audio-sound/Buds2_pc.png?$N_96_PNG$"
+    },
+    {
+      "id": "4a39ed6b-e17d-4bb1-bb52-9c361fca9c01",
+      "title": "Galaxy Buds FE",
+      "slug": "galaxy-buds-fe",
+      "short_desc": "Premium sound for all",
+      "category": "galaxy-buds",
+      "image": "https://images.samsung.com/is/image/samsung/assets/id/2208/pcd/audio-sound/galaxy-buds-fe_lnb_pc_72x96.png?$N_96_PNG$"
+    },
+    {
+      "id": "bd633328-e90c-4d68-9b94-cd5af3eb39d5",
+      "title": "Galaxy Buds Live",
+      "slug": "galaxy-buds-live",
+      "short_desc": "Eargonomic design for comfortable fit",
+      "category": "galaxy-buds",
+      "image": "https://images.samsung.com/is/image/samsung/assets/id/2208/pcd/audio-sound/Budslive_pc.png?$N_96_PNG$"
+    }
+  ],
+  "products": [
+    {
+      "id": "cc04af07-cfeb-491f-bb25-3862551b539e",
+      "title": "Galaxy S24 (Online Exclusive)",
+      "description": "Setting the new standard of mobile, now with Galaxy AI\nShrunken bezels & satin-finished alumunium\nSpace Zoom for pixel-perfect portraits & power for gameplay",
+      "category": "smartphones",
+      "product_type": "galaxy-s",
+      "variations": [
+        {
+          "color": "Sapphireblue",
+          "storage": ["512 GB"],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2401/gallery/id-galaxy-s24-490055-sm-s921blbqxid-539374143?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2401/gallery/id-galaxy-s24-490055-sm-s921blbqxid-539374146?$592_472_PNG$"
+          ],
+          "feature": "Weight (g) 167\nCPU Speed 3.2GHz, 2.9GHz, 1.95GHz"
+        },
+        {
+          "color": "Jade Green",
+          "storage": ["256 GB"],
+          "images": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2401/gallery/id-galaxy-s24-490055-sm-s921blgcxid-539374183?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2401/gallery/id-galaxy-s24-490055-sm-s921blgcxid-539374186?$592_472_PNG$"
+          ],
+          "feature": "SIM Slot Type SIM 1 + SIM 2 / SIM 1 + eSIM / Dual eSIM"
+        }
+      ],
+      "cpu_speed": "3,2GHz, 2.9GHz, 2.6GHz, 1.95GHz",
+      "cpu_type": "Deca-Core",
+      "main_display": {
+        "size": "156.4mm (6.2' full rectangle) / 152.3mm (6.0' rounded corners)",
+        "resolution": "2340 x 1080 (FHD+)",
+        "technology": "Dynamic AMOLLED 2X",
+        "color_depth": "16M",
+        "max_refresh_rate": "120 Hz"
+      },
+      "auto_focus": "Yes",
+      "camera_resolution": "12.0MP",
+      "storage": 256,
+      "memory": 8
+    },
+    {
+      "id": "42d89674-d02d-4f6a-9e4d-3f69e4c3e446",
+      "title": "Galaxy S24 Ultra",
+      "description": "Industry-leading hadrware meets world-changing AI\nMade with titanium. Built to last\n200MP high-resolution photography & hyper-realistic gameplay",
+      "category": "smartphones",
+      "product_type": "galaxy-s",
+      "variations": [
+        {
+          "color": "Titaniumgray",
+          "storage": ["512 GB", "1 TB"],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2401/gallery/id-galaxy-s24-s928-sm-s928bztqxid-539319725?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2401/gallery/id-galaxy-s24-s928-sm-s928bztqxid-539319728?$592_472_PNG$"
+          ],
+          "feature": ""
+        },
+        {
+          "color": "Titanium Violet",
+          "storage": ["256 GB"],
+          "images": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2401/gallery/id-galaxy-s24-s928-sm-s928bzvcxid-539319812?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2401/gallery/id-galaxy-s24-s928-sm-s928bzvcxid-539319808?$592_472_PNG$"
+          ],
+          "feature": ""
+        }
+      ],
+      "cpu_speed": "3.39GHz, 3.1GHz, 2.9GHz, 2.2GHz",
+      "cpu_type": "Octa-Core",
+      "main_display": {
+        "size": "172.5mm (6.8' full rectangle) / 172.2mm (6.8' rounded corners)",
+        "resolution": "3120 x 1440 (Quad HD+)",
+        "technology": "Dynamic AMOLED 2X",
+        "color_depth": "16M",
+        "max_refresh_rate": "120 Hz"
+      },
+      "auto_focus": "Yes",
+      "camera_resolution": "12.0 MP",
+      "storage": 256,
+      "memory": 12
+    },
+    {
+      "id": "446841b1-28e9-4bd7-8c2b-4ed375c3a029",
+      "title": "Galaxy Z Fold5",
+      "description": "Design\nBig Screen\nPerformance",
+      "category": "smartphones",
+      "product_type": "galaxy-z",
+      "variations": [
+        {
+          "color": "Classic Gold",
+          "storage": ["12 GB"],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-f946bakzxid/gallery/id-galaxy-z-fold5-f946-477726-sm-f946bakzxid-538198379?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-f946bakzxid/gallery/id-galaxy-z-fold5-f946-477726-sm-f946bakzxid-538198381?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-f946bakzxid/gallery/id-galaxy-z-fold5-f946-477726-sm-f946bakzxid-538198383?$592_472_PNG$"
+          ],
+          "feature": "Weight (g) 253\nCPU Speed 3.36GHz, 2.8GHz, 2GHz"
+        }
+      ],
+      "cpu_speed": "3.36GHz, 2.8GHz, 2GHz",
+      "cpu_type": "Octa-Core",
+      "main_display": {
+        "size": "192.1mm (7.6' full rectangle) / 188.6mm (7.4 rounded corners)",
+        "resolution": "2176 x 1812 (QXGA+)",
+        "technology": "Dynamic AMOLLED 2X",
+        "color_depth": "16M",
+        "max_refresh_rate": "120 Hz"
+      },
+      "auto_focus": "No",
+      "camera_resolution": "10.0 MP",
+      "storage": 512,
+      "memory": 12
+    },
+    {
+      "id": "4ce44876-1768-4bf1-b291-1868d3f809c2",
+      "title": "Galaxy Z Flip5",
+      "description": "Our most compact Galaxy Z Flip\nThe best selfie experience on a Samsung Galaxy smartphone\nThe largest Cover Screen on a Galaxy Z Flip Yet",
+      "category": "smartphones",
+      "product_type": "galaxy-z",
+      "variations": [
+        {
+          "color": "Cream",
+          "storage": ["512 GB"],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-z-flip5-f731-sm-f731bzeexid-537223841?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-z-flip5-f731-sm-f731bzeexid-537223843?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-z-flip5-f731-sm-f731bzeexid-537223844?$592_472_PNG$"
+          ],
+          "feature": "",
+          "price": 17999000
+        },
+        {
+          "color": "Graphite",
+          "storage": ["512 GB"],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-z-flip5-f731-sm-f731bzaexid-537223798?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-z-flip5-f731-sm-f731bzaexid-537223800?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-z-flip5-f731-sm-f731bzaexid-537223801?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-z-flip5-f731-sm-f731bzaexid-537223802?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-z-flip5-f731-sm-f731bzaexid-537223803?$592_472_PNG$"
+          ],
+          "feature": "Processor 3.36GHz, 2.8GHz, 2GHz",
+          "price": null
+        }
+      ],
+      "cpu_speed": "3.36GHz, 2.8GHz, 2GHz",
+      "cpu_type": "Octa-Core",
+      "main_display": {
+        "size": "170.3mm (6.7' full rectangle) / 166.4mm (6.6' rounded corners)",
+        "resolution": "2640 x 1080 (FHD+)",
+        "technology": "Dynamic AMOLLED 2X",
+        "color_depth": "16M",
+        "max_refresh_rate": "120 Hz"
+      },
+      "auto_focus": "No",
+      "camera_resolution": "10.0 MP",
+      "storage": 512,
+      "memory": 8
+    },
+    {
+      "id": "a5a55f90-f023-4db8-8673-58779756b4de",
+      "title": "Galaxy A05s",
+      "description": "6.7' FHD+ Display\n50MP Camera\nOcta core processor",
+      "category": "smartphones",
+      "product_type": "galaxy-a",
+      "variations": [
+        {
+          "color": "Silver",
+          "storage": ["6 GB"],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-a057fzshxid/gallery/id-galaxy-a05s-sm-a057-sm-a057fzshxid-538374561?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-a057fzshxid/gallery/id-galaxy-a05s-sm-a057-sm-a057fzshxid-538374564?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-a057fzshxid/gallery/id-galaxy-a05s-sm-a057-sm-a057fzshxid-538374566?$592_472_PNG$"
+          ],
+          "feature": "",
+          "price": 2199000
+        },
+        {
+          "color": "Light Violet",
+          "storage": ["6 GB"],
+          "images": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-a057flvhxid/gallery/id-galaxy-a05s-sm-a057-479703-sm-a057flvhxid-540320089?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-a057flvhxid/gallery/id-galaxy-a05s-sm-a057-479703-sm-a057flvhxid-540320084?$592_472_PNG$"
+          ],
+          "feature": "",
+          "price": 2199000
+        }
+      ],
+      "cpu_speed": "2.4GHz, 1.9GHz",
+      "cpu_type": "Octa-Core",
+      "main_display": {
+        "size": "170.8mm (6.7' full rectangle) / 166.4mm (6.6' rounded corners)",
+        "resolution": "1080 x 2400 (FHD+)",
+        "technology": "PLS CLD",
+        "color_depth": "16M",
+        "max_refresh_rate": null
+      },
+      "auto_focus": "Yes",
+      "camera_resolution": "13.0 MP",
+      "storage": 128,
+      "memory": 6
+    },
+    {
+      "id": "1f193df2-9f74-4d7a-b6b2-4a4dad2bc2aa",
+      "title": "Galaxy M34 5G",
+      "description": "6.5' FHD+120Hz Display\n50MP OIS Camera",
+      "category": "smartphones",
+      "product_type": "galaxy-m",
+      "variations": [
+        {
+          "color": "Dark Blue",
+          "storage": ["8 GB"],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-m346bdbgxid/gallery/id-galaxy-m34-5g-sm-m346-sm-m346bdbgxid-538770176?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-m346bdbgxid/gallery/id-galaxy-m34-5g-sm-m346-sm-m346bdbgxid-538770178?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-m346bdbgxid/gallery/id-galaxy-m34-5g-sm-m346-sm-m346bdbgxid-538770180?$592_472_PNG$"
+          ],
+          "feature": "6.5' FHD+ Super AMOLED 120Hz Display\n50MP OIS Camera",
+          "price": null
+        },
+        {
+          "color": "Silver",
+          "storage": ["8 GB"],
+          "images": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-m346bzsgxid/gallery/id-galaxy-m34-5g-sm-m346-sm-m346bzsgxid-538770220?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-m346bzsgxid/gallery/id-galaxy-m34-5g-sm-m346-sm-m346bzsgxid-538770223?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-m346bzsgxid/gallery/id-galaxy-m34-5g-sm-m346-sm-m346bzsgxid-538770225?$592_472_PNG$"
+          ],
+          "feature": "6.5' FHD+ Super AMOLED 120Hz Display\n50MP OIS Camera\n6,000mAh Battery"
+        }
+      ],
+      "cpu_speed": "2.4GHz, 2GHz",
+      "cpu_type": "Octa-Core",
+      "main_display": {
+        "size": "164.2mm (6.5' full rectangle) / 159.8mm (6.3' rounded corners)",
+        "resolution": "1080 x 2340 (FHD+)",
+        "technology": "Super AMOLED",
+        "color_depth": "16M",
+        "max_refresh_rate": "120 Hz"
+      },
+      "auto_focus": "Yes",
+      "camera_resolution": "13.0 MP",
+      "storage": 128,
+      "memory": 8
+    },
+    {
+      "id": "fcac3fb4-0516-445e-a67c-289beaceaf10",
+      "title": "Galaxy Tab S9 FE",
+      "description": "Expressive Design & S Pen\nImmersive Viewing (10.9”) with 90Hz Refresh Rate\nDurability - IP68",
+      "category": "tablets",
+      "product_type": "galaxy-tab-s",
+      "variations": [
+        {
+          "color": "Light Green",
+          "storage": ["128 GB"],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x516blgaxid/gallery/id-galaxy-tab-s9-fe-sm-x516-sm-x516blgaxid-538495098?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x516blgaxid/gallery/id-galaxy-tab-s9-fe-sm-x516-sm-x516blgaxid-538495097?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x516blgaxid/gallery/id-galaxy-tab-s9-fe-sm-x516-sm-x516blgaxid-538495099?$592_472_PNG$"
+          ],
+          "feature": "",
+          "price": 7499000
+        },
+        {
+          "color": "Lavender",
+          "storage": ["128 GB"],
+          "images": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x516bliaxid/gallery/id-galaxy-tab-s9-fe-sm-x516-sm-x516bliaxid-538495184?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x516bliaxid/gallery/id-galaxy-tab-s9-fe-sm-x516-sm-x516bliaxid-538495186?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x516bliaxid/gallery/id-galaxy-tab-s9-fe-sm-x516-sm-x516bliaxid-538495185?$592_472_PNG$"
+          ],
+          "feature": "Warna Stylish\nLayar Mulus\nLow Blue Light\nIP68"
+        }
+      ],
+      "cpu_speed": "2.4GHz, 2GHz",
+      "cpu_type": "Octa-Core",
+      "main_display": {
+        "size": "10.9' (277.0mm)",
+        "resolution": "2304 x 1440 (WUXGA+)",
+        "technology": "TFT",
+        "color_depth": "16M",
+        "max_refresh_rate": null
+      },
+      "auto_focus": "Yes",
+      "camera_resolution": "12.0 MP",
+      "storage": 6,
+      "memory": 128
+    },
+    {
+      "id": "3cf3ef41-77b5-4ceb-a0b6-0f31229727ad",
+      "title": "Galaxy Tab S9 FE+",
+      "description": "Expressive Design & S Pen\nImmersive Viewing (12.4”) with 90Hz Refresh Rate\nDurability - IP68",
+      "category": "tablets",
+      "product_type": "galaxy-tab-s",
+      "variations": [
+        {
+          "color": "Light Green",
+          "storage": ["256 GB"],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x616blgexid/gallery/id-galaxy-tab-s9-fe-plus-sm-x616-sm-x616blgexid-538495419?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x616blgexid/gallery/id-galaxy-tab-s9-fe-plus-sm-x616-sm-x616blgexid-538495420?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x616blgexid/gallery/id-galaxy-tab-s9-fe-plus-sm-x616-sm-x616blgexid-538495424?$592_472_PNG$"
+          ],
+          "feature": "",
+          "price": 10999000
+        },
+        {
+          "color": "Lavender",
+          "storage": ["256 GB"],
+          "images": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x616bliexid/gallery/id-galaxy-tab-s9-fe-plus-sm-x616-sm-x616bliexid-538495449?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x616bliexid/gallery/id-galaxy-tab-s9-fe-plus-sm-x616-sm-x616bliexid-538495451?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x616bliexid/gallery/id-galaxy-tab-s9-fe-plus-sm-x616-sm-x616bliexid-538495444?$592_472_PNG$"
+          ],
+          "feature": "",
+          "price": 10999000
+        }
+      ],
+      "cpu_speed": "2.4GHz, 2GHz",
+      "cpu_type": "Octa-Core",
+      "main_display": {
+        "size": "12.4' (315.0mm)",
+        "resolution": "2560 x 1600 (WQXGA)",
+        "technology": "TFT",
+        "color_depth": "16M",
+        "max_refresh_rate": null
+      },
+      "auto_focus": "Yes",
+      "camera_resolution": "12.0 MP",
+      "storage": 256,
+      "memory": 12
+    },
+    {
+      "id": "dbfab445-7541-4b44-a1ae-3f4bdf844c09",
+      "title": "Galaxy Tab S9 FE WIFI",
+      "description": "Expressive Design & S Pen\nImmersive Viewing (10.9”) with 90Hz Refresh Rate\nDurability - IP68",
+      "category": "tablets",
+      "product_type": "galaxy-tab-s",
+      "variations": [
+        {
+          "color": "Gray",
+          "storage": ["128 GB"],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x510nzaaxid/gallery/id-galaxy-tab-s9-fe-sm-x510-sm-x510nzaaxid-538495370?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x510nzaaxid/gallery/id-galaxy-tab-s9-fe-sm-x510-sm-x510nzaaxid-538495371?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x510nzaaxid/gallery/id-galaxy-tab-s9-fe-sm-x510-sm-x510nzaaxid-538495374?$592_472_PNG$"
+          ],
+          "feature": "",
+          "price": 6499000
+        }
+      ],
+      "cpu_speed": "2.4GHz, 2GHz",
+      "cpu_type": "Octa-Core",
+      "main_display": {
+        "size": "10.9' (277.0mm)",
+        "resolution": "2304 x 1440 (WUXGA+)",
+        "technology": "TFT",
+        "color_depth": "16M",
+        "max_refresh_rate": null
+      },
+      "auto_focus": "Yes",
+      "camera_resolution": "12.0 MP",
+      "storage": 128,
+      "memory": 6
+    },
+    {
+      "id": "69d8a25f-a336-4575-8aee-9c90cdb63dc1",
+      "title": "Galaxy Tab A9 LTE Kids Package",
+      "description": "Exclusive Kids Package terdiri dari Puffy Cover + Crayon Stylus + Kids Sticker + Travel Adapter 20W + Gratis 1 Tahun Samsung Care+\nHarga Rp3.299.000 sudah termasuk Tab A9 LTE dan Kids Package\n Puffy Cover, Crayon Stylus, dan Sticker tidak dijual terpisah",
+      "category": "tablets",
+      "product_type": "galaxy-tab-a",
+      "variations": [
+        {
+          "color": "",
+          "storage": ["64 GB"],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/f-sm-x115nzaax/gallery/id-galaxy-tab-a9-lte-kids-package-f-sm-x115nzaax-thumb-539237560?$592_472_PNG$"
+          ],
+          "feature": "8.7“ full rectangle screen size\nExternal storage up to 1TB\nMulti-tasking up to two apps\nCPU Speed 2.2GHz, 2GHz",
+          "price": null
+        }
+      ],
+      "cpu_speed": "2.2GHz, 2GHz",
+      "cpu_type": "Octa-Core",
+      "main_display": {
+        "size": "8.7' (220.5mm)",
+        "resolution": "1340 x 800 (WXGA+)",
+        "technology": "TFT",
+        "color_depth": "16M",
+        "max_refresh_rate": null
+      },
+      "auto_focus": "Yes",
+      "camera_resolution": "2.0 MP",
+      "storage": 64,
+      "memory": 4
+    },
+    {
+      "id": "6f8f7465-e1a4-420d-9291-a415fb703ae4",
+      "title": "Galaxy Tab A9 WiFi",
+      "description": "Engaging Viewing & One Handy Operation\nProcessor Mediatek Helio G99\nParental Control",
+      "category": "tablets",
+      "product_type": "galaxy-tab-a",
+      "variations": [
+        {
+          "color": "Graphite",
+          "storage": ["64 GB"],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x110nzaaxid/gallery/id-galaxy-tab-a9-sm-x110-sm-x110nzaaxid-538770087?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x110nzaaxid/gallery/id-galaxy-tab-a9-sm-x110-sm-x110nzaaxid-538770088?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x110nzaaxid/gallery/id-galaxy-tab-a9-sm-x110-sm-x110nzaaxid-538770090?$592_472_PNG$"
+          ],
+          "feature": "",
+          "price": 2299000
+        }
+      ],
+      "cpu_speed": "2.2GHz, 2GHz",
+      "cpu_type": "Octa-Core",
+      "main_display": {
+        "size": "8.7' (220.5mm)",
+        "resolution": "1340 x 800 (WXGA+)",
+        "technology": "TFT",
+        "color_depth": "16M",
+        "max_refresh_rate": null
+      },
+      "auto_focus": "Yes",
+      "camera_resolution": "2.0 MP",
+      "storage": 64,
+      "memory": 4
+    },
+    {
+      "id": "63859a03-707c-460c-8a69-f1834de53dfd",
+      "title": "Galaxy Tab A7 Lite Wi-Fi",
+      "description": "8.7-inch display\nPortable design\n15W Fast Charging",
+      "category": "tablets",
+      "product_type": "galaxy-tab-a",
+      "variations": [
+        {
+          "color": "Gray",
+          "storage": ["32 GB"],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-t220nzaaxid/gallery/id-galaxy-tab-a7-lite-wifi-t220-sm-t220nzaaxid-534794499?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-t220nzaaxid/gallery/id-galaxy-tab-a7-lite-wifi-t220-sm-t220nzaaxid-534794501?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-t220nzaaxid/gallery/id-galaxy-tab-a7-lite-wifi-t220-sm-t220nzaaxid-534794504?$592_472_PNG$"
+          ],
+          "feature": "Immersive display\nPortable design\n15W Fast charging\nSize (Main Display) 8.7' (220.5mm)",
+          "price": null
+        }
+      ],
+      "cpu_speed": "2.3GHz, 1.8GHz",
+      "cpu_type": "Octa-Core",
+      "main_display": {
+        "size": "8.7' (220.5mm)",
+        "resolution": "1340 x 800 (WXGA+)",
+        "technology": "TFT",
+        "color_depth": "16M",
+        "max_refresh_rate": null
+      },
+      "auto_focus": "Yes",
+      "camera_resolution": "2.0 MP",
+      "storage": 32,
+      "memory": 3
+    },
+    {
+      "id": "36f4acb7-71ca-4886-9b2d-7552578d8bc5",
+      "title": "Galaxy Watch6 (Bluetooth, 40mm)",
+      "description": "A big, circular view on your wrist\nDevelop healthy sleeping habits\nGet detailed insights on your body and wellness",
+      "category": "watches",
+      "product_type": "galaxy-watch",
+      "variations": [
+        {
+          "color": "Beige",
+          "storage": [],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-watch6-r935-sm-r930nzeaxse-537405326?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-watch6-r935-sm-r930nzeaxse-537405327?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-watch6-r935-sm-r930nzeaxse-537405328?$592_472_PNG$"
+          ],
+          "feature": "",
+          "price": 3999000
+        },
+        {
+          "color": "Black",
+          "storage": [],
+          "images": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-watch6-r935-sm-r930nzkaxse-537405353?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-watch6-r935-sm-r930nzkaxse-537405354?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-watch6-r935-sm-r930nzkaxse-537405355?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-watch6-r935-sm-r930nzkaxse-537405357?$592_472_PNG$"
+          ],
+          "feature": "",
+          "price": 3999000
+        }
+      ],
+      "cpu_speed": null,
+      "cpu_type": null,
+      "main_display": {
+        "size": "1.3' (33.3mm)",
+        "resolution": "432 x 432",
+        "technology": "Super AMOLED",
+        "color_depth": "16M",
+        "max_refresh_rate": null
+      },
+      "auto_focus": null,
+      "camera_resolution": null,
+      "storage": 16,
+      "memory": 2
+    },
+    {
+      "id": "266608b8-6fed-4e3d-94b5-2d2f151f3517",
+      "title": "Galaxy Watch5 Bluetooth (44mm)",
+      "description": "Monitor your health around the clock even at night.\nAchieve your wellness goal by measuring body composition with Samsung BioActive sensor.\nProvided with 13% bigger battery for everyday usage.",
+      "category": "watches",
+      "product_type": "galaxy-watch",
+      "variations": [
+        {
+          "color": "Sapphire",
+          "storage": [],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-watch5-44mm-sm-r910nzbaxse-533189002?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-watch5-44mm-sm-r910nzbaxse-533189003?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-watch5-44mm-sm-r910nzbaxse-533189004?$592_472_PNG$"
+          ],
+          "feature": "Durability\nSleep tracking\nBioActive sensor",
+          "price": null
+        },
+        {
+          "color": "Silver",
+          "storage": [],
+          "images": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-watch5-44mm-sm-r910nzsaxse-533189047?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-watch5-44mm-sm-r910nzsaxse-533189049?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-watch5-44mm-sm-r910nzsaxse-533189050?$592_472_PNG$"
+          ],
+          "feature": "Durability\nSleep tracking\nBioActive sensor",
+          "price": null
+        }
+      ],
+      "cpu_speed": "1.18GHz",
+      "cpu_type": "Dual-Core",
+      "main_display": {
+        "size": "1.4' (34.6mm)",
+        "resolution": "450 x 450",
+        "technology": "Super AMOLED",
+        "color_depth": "16M",
+        "max_refresh_rate": null
+      },
+      "auto_focus": null,
+      "camera_resolution": null,
+      "storage": 16,
+      "memory": 1.5
+    },
+    {
+      "id": "f961bae4-9441-459a-aca8-43b6288c8cfe",
+      "title": "Galaxy Watch3 Bluetooth (41mm)",
+      "description": "Design : Top Refined Real Watch Design\nHealth Feature : Most Advanced Health Monitoring\nEase of use : Best Experience in Notification & Music",
+      "category": "watches",
+      "product_type": "galaxy-watch",
+      "variations": [
+        {
+          "color": "Mystic Bronze",
+          "storage": [],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/id/galaxy-note20/gallery/id-galaxy-watch3-r850-sm-r850nzdaxse-dynamicmysticbronze-275072552?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/id/galaxy-note20/gallery/id-galaxy-watch3-r850-sm-r850nzdaxse-rperspectivemysticbronze-275072551?$592_472_PNG$"
+          ],
+          "feature": "CLASSIC AND PREMIUM\nDIGNIFIED DESIGN",
+          "price": 0
+        }
+      ],
+      "cpu_speed": "1.15GHz",
+      "cpu_type": "Dual-Core",
+      "main_display": {
+        "size": "1.2' (30.2mm)",
+        "resolution": "360 x 360",
+        "technology": "Super AMOLED",
+        "color_depth": "16M",
+        "max_refresh_rate": null
+      },
+      "auto_focus": null,
+      "camera_resolution": null,
+      "storage": 8,
+      "memory": 1
+    },
+    {
+      "id": "96e29a8c-7776-42fd-a426-eda287ee3309",
+      "title": "Galaxy Watch6 Classic (Bluetooth, 47mm)",
+      "description": "Smooth, intuitive scrolling. Any way you spin it\nTrack your workouts to maximize results",
+      "category": "watches",
+      "product_type": "galaxy-watch-classic",
+      "variations": [
+        {
+          "color": "Silver",
+          "storage": [],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-watch6-classic-r965-sm-r960nzsaxse-537432744?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-watch6-classic-r965-sm-r960nzsaxse-537432745?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-watch6-classic-r965-sm-r960nzsaxse-537432746?$592_472_PNG$"
+          ],
+          "feature": "",
+          "price": 5999000
+        }
+      ],
+      "cpu_speed": "1.4GHz",
+      "cpu_type": "Dual-Core",
+      "main_display": {
+        "size": "1.5' (37.3mm)",
+        "resolution": "480 x 480",
+        "technology": "Super AMOLED",
+        "color_depth": "16M",
+        "max_refresh_rate": null
+      },
+      "auto_focus": null,
+      "camera_resolution": null,
+      "storage": 16,
+      "memory": 2
+    },
+    {
+      "id": "d7d66f89-da1b-4cd0-96d6-4f43b811da01",
+      "title": "Galaxy Watch5 Pro Bluetooth (45mm)",
+      "description": "GPS route tracking guides turn-by-turn directions for cyclists and hikers.\nThe biggest battery in our wearable for outdoor adventure.",
+      "category": "watches",
+      "product_type": "galaxy-watch-pro",
+      "variations": [
+        {
+          "color": "Black Titanium",
+          "storage": [],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-watch5-pro-sm-r920nzkaxse-533189682?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-watch5-pro-sm-r920nzkaxse-533189683?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-watch5-pro-sm-r920nzkaxse-533189684?$592_472_PNG$"
+          ],
+          "feature": "Sleep tracking\nGPS route tracking\nBattery",
+          "price": null
+        }
+      ],
+      "cpu_speed": "1.18GHz",
+      "cpu_type": "Dual-Core",
+      "main_display": {
+        "size": "1.4' (34.6mm)",
+        "resolution": "450 x 450",
+        "technology": "Super AMOLED",
+        "color_depth": "16M",
+        "max_refresh_rate": null
+      },
+      "auto_focus": null,
+      "camera_resolution": null,
+      "storage": 16,
+      "memory": 1.5
+    },
+    {
+      "id": "b949bc1c-34bb-4bfd-8941-0738b469efcb",
+      "title": "Galaxy Fit3",
+      "description": "1.6' AMOLED display providing a clear viewing area for easy interaction\nCharges up to 65% in 30 minutes and lasts up to 13 days at a full charge",
+      "category": "watches",
+      "product_type": "galaxy-watch-fit",
+      "variations": [
+        {
+          "color": "Gray",
+          "storage": [],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-r390nzaaxse/gallery/id-galaxy-fit3-r390-sm-r390nzaaxse-539926081?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-r390nzaaxse/gallery/id-galaxy-fit3-r390-sm-r390nzaaxse-539926082?$592_472_PNG$"
+          ],
+          "feature": "",
+          "price": 799000
+        },
+        {
+          "color": "Pink Gold",
+          "storage": [],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-r390nidaxse/gallery/id-galaxy-fit3-r390-sm-r390nidaxse-539926065?$592_472_PNG$"
+          ],
+          "feature": "",
+          "price": 799000
+        }
+      ],
+      "cpu_speed": null,
+      "cpu_type": null,
+      "main_display": {
+        "size": "1.6' (40.0mm)",
+        "resolution": "256 x 402",
+        "technology": "AMOLED",
+        "color_depth": "16M",
+        "max_refresh_rate": null
+      },
+      "auto_focus": null,
+      "camera_resolution": null,
+      "storage": null,
+      "memory": null
+    },
+    {
+      "id": "708b3e26-0275-4926-9668-4c817308b4a0",
+      "title": "Galaxy Buds2 Pro",
+      "description": "24bit Hi-Fi sound for quality listening experience.\nANC with 3 high SNR microphones eliminate more exterior noise.\nErgonomic design for comfort fit.",
+      "category": "galaxy-buds",
+      "product_type": "galaxy-buds-2-pro",
+      "variations": [
+        {
+          "color": "Graphite",
+          "storage": [],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-buds2-pro-r510-sm-r510nzaaxse-533199900?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-buds2-pro-r510-sm-r510nzaaxse-533199902?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-buds2-pro-r510-sm-r510nzaaxse-533199903?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-buds2-pro-r510-sm-r510nzaaxse-533199905?$592_472_PNG$"
+          ],
+          "feature": "",
+          "price": 2799000
+        }
+      ],
+      "cpu_speed": null,
+      "cpu_type": null,
+      "main_display": {
+        "size": null,
+        "resolution": null,
+        "technology": null,
+        "color_depth": null,
+        "max_refresh_rate": null
+      },
+      "auto_focus": null,
+      "camera_resolution": null,
+      "storage": null,
+      "memory": null,
+      "buds": {
+        "speaker": "Custom Coaxial 2-way",
+        "audio_codec": "SSC (Samsung Seamless Codec) HiFi,AAC,SBC",
+        "bluetooth_version": "Bluetooth v5.3",
+        "battery_capacity_earbud": "61 mAh",
+        "battery_capacity_case": "515 mAh"
+      }
+    },
+    {
+      "id": "6e90e36d-0e4e-491d-8ba2-2eac256696b3",
+      "title": "Galaxy Buds2",
+      "description": "Well-balanced Sound\nBattery Life\nANC",
+      "category": "galaxy-buds",
+      "product_type": "galaxy-buds2",
+      "variations": [
+        {
+          "color": "Graphite",
+          "storage": [],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2108/gallery/id-galaxy-buds2-r177-sm-r177nzkaxse-481740808?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/2108/gallery/id-galaxy-buds2-r177-sm-r177nzkaxse-481740810?$592_472_PNG$"
+          ],
+          "feature": "",
+          "price": 1699000
+        }
+      ],
+      "cpu_speed": null,
+      "cpu_type": null,
+      "main_display": {
+        "size": null,
+        "resolution": null,
+        "technology": null,
+        "color_depth": null,
+        "max_refresh_rate": null
+      },
+      "auto_focus": null,
+      "camera_resolution": null,
+      "storage": null,
+      "memory": null,
+      "buds": {
+        "speaker": null,
+        "audio_codec": null,
+        "bluetooth_version": "Bluetooth v5.2",
+        "battery_capacity_earbud": "61 mAh",
+        "battery_capacity_case": "472 mAh"
+      }
+    },
+    {
+      "id": "39fff1e4-de0b-4b3e-b674-4e1a94e66626",
+      "title": "Galaxy Buds FE",
+      "description": "Powerful ANC & Ambience Sound\nComfortable Fit Design",
+      "category": "galaxy-buds",
+      "product_type": "galaxy-buds-fe",
+      "variations": [
+        {
+          "color": "white",
+          "storage": [],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-r400nzwaxse/gallery/id-galaxy-buds-fe-sm-r400nzwaxse-538463244?$2052_1641_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-r400nzwaxse/gallery/id-galaxy-buds-fe-sm-r400nzwaxse-538463230?$684_547_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-r400nzwaxse/gallery/id-galaxy-buds-fe-sm-r400nzwaxse-538463231?$684_547_PNG$"
+          ],
+          "feature": "Ergonomic Comfort\nTurn the world off with powerful ANC",
+          "price": null
+        }
+      ],
+      "cpu_speed": null,
+      "cpu_type": null,
+      "main_display": {
+        "size": null,
+        "resolution": null,
+        "technology": null,
+        "color_depth": null,
+        "max_refresh_rate": null
+      },
+      "auto_focus": null,
+      "camera_resolution": null,
+      "storage": null,
+      "memory": null,
+      "buds": {
+        "speaker": "Custom 1-way",
+        "audio_codec": "SSC (Samsung Scalable Codec),AAC,SBC",
+        "bluetooth_version": "Bluetooth v5.2",
+        "battery_capacity_earbud": "61 mAh",
+        "battery_capacity_case": "479 mAh"
+      }
+    },
+    {
+      "id": "3714821f-b588-49f2-895d-98acc003777a",
+      "title": "Galaxy Buds Live",
+      "description": "Suara yang dalam & kaya dengan bass boost yang bertenaga\nActive Noise Cancellation pertama pada Galaxy Buds",
+      "category": "galaxy-buds",
+      "product_type": "galaxy-buds-live",
+      "variations": [
+        {
+          "color": "Mystic Bronze",
+          "storage": [],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/id/galaxy-note20/gallery/id-galaxy-buds-live-r180-sm-r180nznaxse-backmysticbronze-275665479?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/id/galaxy-note20/gallery/id-galaxy-buds-live-r180-sm-r180nznaxse-dynamicmysticbronze-275665477?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/id/galaxy-note20/gallery/id-galaxy-buds-live-r180-sm-r180nznaxse-casedynamiccombinationmysticbronze-275665476?$592_472_PNG$"
+          ],
+          "feature": "Desain ikonik\nWarna\nErgonomis",
+          "price": null
+        }
+      ],
+      "cpu_speed": null,
+      "cpu_type": null,
+      "main_display": {
+        "size": null,
+        "resolution": null,
+        "technology": null,
+        "color_depth": null,
+        "max_refresh_rate": null
+      },
+      "auto_focus": null,
+      "camera_resolution": null,
+      "storage": null,
+      "memory": null,
+      "buds": {
+        "speaker": null,
+        "audio_codec": null,
+        "bluetooth_version": "Bluetooth v5.0",
+        "battery_capacity_earbud": "60 mAh",
+        "battery_capacity_case": "472 mAh"
+      }
+    },
+    {
+      "id": "",
+      "title": "",
+      "description": "",
+      "category": "",
+      "product_type": "",
+      "variations": [
+        {
+          "color": "",
+          "storage": [],
+          "image": [
+
+          ],
+          "feature": "",
+          "price": 0
+        }
+      ],
+      "cpu_speed": "",
+      "cpu_type": "",
+      "main_display": {
+        "size": "",
+        "resolution": "",
+        "technology": "",
+        "color_depth": "",
+        "max_refresh_rate": null
+      },
+      "auto_focus": null,
+      "camera_resolution": null,
+      "storage": 0,
+      "memory": 0
+    }
+  ]
 }
