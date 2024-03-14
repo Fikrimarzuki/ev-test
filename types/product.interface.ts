@@ -1,19 +1,57 @@
 interface Variation {
-  id: number;
-  name: string;
-  image: string;
-  price: number;
+  color: string;
+  storage: string[];
+  image: string[];
+  feature: string;
+  price?: number | null;
+}
+
+interface IMainDisplay {
+  size: string;
+  resolution: string;
+  technology: string;
+  color_depth: string;
+  max_refresh_rate: string;
+}
+
+interface IBuds {
+  speaker: string;
+  audio_code: string;
+  bluetooth_version: string;
+  battery_capacity_earbud: string;
+  battery_capacity_case: string;
 }
 
 export interface IProduct {
   id: number;
-  name: string;
-  slug: string;
-  price: number;
-  discount_price: number | null;
-  category: string[];
+  title: string;
   description: string;
-  images: string[];
+  category: string;
+  product_type: string;
   variations: Variation[];
-  stock: number;
+
+  cpu_speed: string;
+  cpu_type: string;
+  main_display: IMainDisplay;
+  auto_focus: string;
+  camera_resolution: string;
+  storage: number;
+  memory: number;
+  buds?: IBuds;
+}
+
+
+export interface ICategory {
+  id: string;
+  title: string;
+  slug: string;
+}
+
+export interface IProductType {
+  id: string;
+  title: string;
+  slug: string;
+  short_desc: string;
+  category: string;
+  image: string;
 }

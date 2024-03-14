@@ -5,15 +5,29 @@
       <NuxtPage />
     </div>
     <Footer />
+    <Toast />
   </main>
 </template>
+
+<script lang="ts" setup>
+import data from "~/db.json";
+const route = useRoute();
+const categories = data.categories;
+const paddingTop = computed(() => {
+  if (route.path.includes("product")) {
+    if (categories.find(el => el.slug === route.query.tab)?.slug) return "196px"
+    return "103px"
+  } 
+  return "68px"
+})
+</script>
 
 <style lang="scss" scoped>
 main {
   position: relative;
+  font-family: Sarabun, arial, sans-serif;
   .page-wrapper {
-    padding-top: 78px;
-    font-family: "Sarabun", "Sans-serif";
+    padding-top: v-bind(paddingTop);
   }
 }
 </style>

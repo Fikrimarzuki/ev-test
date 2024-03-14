@@ -1,7 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@pinia/nuxt", "@nuxt/image", "nuxt-icon"],
+  modules: [
+    "@pinia/nuxt",
+    "@nuxt/image",
+    "nuxt-icon"
+  ],
   app: {
     head: {
       charset: "utf-8",
@@ -18,6 +22,7 @@ export default defineNuxtConfig({
         scss: {
           additionalData: `
             @use '~/assets/scss/_color.scss' as *;
+            @use '~/assets/scss/_variable.scss' as *;
             @use '~/assets/fonts/_fonts.scss' as *;
           `
         }

@@ -19,11 +19,6 @@
       "id": "db4faf1a-d298-4bad-92d5-19ab6a3697ab",
       "title": "Galaxy Buds",
       "slug": "galaxy-buds"
-    },
-    {
-      "id": "afd82765-382a-4b41-9e1f-a51ead67643a",
-      "title": "Aksesori",
-      "slug": "aksesori"
     }
   ],
   "product-types": [
@@ -155,7 +150,8 @@
             "https://images.samsung.com/is/image/samsung/p6pim/id/2401/gallery/id-galaxy-s24-490055-sm-s921blbqxid-539374143?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/2401/gallery/id-galaxy-s24-490055-sm-s921blbqxid-539374146?$592_472_PNG$"
           ],
-          "feature": "Weight (g) 167\nCPU Speed 3.2GHz, 2.9GHz, 1.95GHz"
+          "feature": "Weight (g) 167\nCPU Speed 3.2GHz, 2.9GHz, 1.95GHz",
+          "price": null
         },
         {
           "color": "Jade Green",
@@ -164,7 +160,8 @@
             "https://images.samsung.com/is/image/samsung/p6pim/id/2401/gallery/id-galaxy-s24-490055-sm-s921blgcxid-539374183?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/2401/gallery/id-galaxy-s24-490055-sm-s921blgcxid-539374186?$592_472_PNG$"
           ],
-          "feature": "SIM Slot Type SIM 1 + SIM 2 / SIM 1 + eSIM / Dual eSIM"
+          "feature": "SIM Slot Type SIM 1 + SIM 2 / SIM 1 + eSIM / Dual eSIM",
+          "price": null
         }
       ],
       "cpu_speed": "3,2GHz, 2.9GHz, 2.6GHz, 1.95GHz",
@@ -341,6 +338,50 @@
       "camera_resolution": "13.0 MP",
       "storage": 128,
       "memory": 6
+    },
+    {
+      "id": "a5a55f90-f023-4db8-8673-5877975z1z21",
+      "title": "Galaxy A35 5G",
+      "description": "6.6” FHD+ Super AMOLED adaptive 120Hz display\n50MP wide angle camera with OIS, VDIS",
+      "category": "smartphones",
+      "product_type": "galaxy-a",
+      "variations": [
+        {
+          "color": "Awesome Lilac",
+          "storage": ["128 GB", "256 GB"],
+          "image": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-a356elvgxid/gallery/id-galaxy-a35-5g-sm-a356-sm-a356elvgxid-540157786?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-a356elvgxid/gallery/id-galaxy-a35-5g-sm-a356-sm-a356elvgxid-540157788?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-a356elvgxid/gallery/id-galaxy-a35-5g-sm-a356-sm-a356elvgxid-540157789?$592_472_PNG$"
+          ],
+          "feature": "",
+          "price": 4999000
+        },
+        {
+          "color": "Awesome Iceblue",
+          "storage": ["128 GB", "256 GB"],
+          "images": [
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-a356elbgxid/gallery/id-galaxy-a35-5g-sm-a356-sm-a356elbgxid-540157701?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-a356elbgxid/gallery/id-galaxy-a35-5g-sm-a356-sm-a356elbgxid-540157703?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/id/sm-a356elbgxid/gallery/id-galaxy-a35-5g-sm-a356-sm-a356elbgxid-540157705?$592_472_PNG$"
+          ],
+          "feature": "",
+          "price": 4999000
+        }
+      ],
+      "cpu_speed": "2.4GHz, 2GHz",
+      "cpu_type": "Octa-Core",
+      "main_display": {
+        "size": "168.3mm (6.6' full rectangle) / 163.7mm (6.4' rounded corners)",
+        "resolution": "1080 x 2340 (FHD+)",
+        "technology": "Super AMOLED",
+        "color_depth": "16M",
+        "max_refresh_rate": "120 Hz"
+      },
+      "auto_focus": "Yes",
+      "camera_resolution": "13.0 MP",
+      "storage": 256,
+      "memory": 8
     },
     {
       "id": "1f193df2-9f74-4d7a-b6b2-4a4dad2bc2aa",
