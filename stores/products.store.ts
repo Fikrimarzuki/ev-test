@@ -27,9 +27,6 @@ export const useProductStore = defineStore("products", {
             }
           }
           url = url.slice(0, -1)
-          // if (filter.category) url += `category=${filter.category}&`
-          // if (filter.keyword) url += `title=${filter.keyword}&`
-          // if (filter.product_type) url += `product_type=${filter.product_type}`
         }
         const response = await fetch(`${useEnv().BASE_URL}/${url}`);
         if (!response.ok) {
@@ -54,9 +51,6 @@ export const useProductStore = defineStore("products", {
             }
           }
           url = url.slice(0, -1)
-          // if (filter.category) url += `category=${filter.category}&`
-          // if (filter.keyword) url += `title=${filter.keyword}&`
-          // if (filter.product_type) url += `product_type=${filter.product_type}`
         }
         const response = await fetch(`/api/${url}`);
         if (!response.ok) {

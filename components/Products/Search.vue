@@ -61,13 +61,11 @@
 
 <script lang="ts" setup>
 import { useProductStore } from "~/stores/products.store";
-import type { IProductFilter } from "~/types/product.interface";
 defineProps({
   isLoading: { type: Boolean, default: false }
 })
 const route = useRoute();
 const router = useRouter();
-const notification = useNotif()
 const store = useProductStore();
 const keyword = ref("");
 const products = computed(() => store.getProducts);
@@ -100,36 +98,6 @@ const handleClickAccordion = (q: string, v: string | number) => {
   newQuery = newQuery.slice(0, newQuery.length - 1)
   router.push(`/products${newQuery}`)
 }
-
-// async function handleFetchProduct() {
-//   if (isLoading.value) return
-//   try {
-//     isLoading.value = true
-//     let filter: IProductFilter = {}
-//     if (route.query) {
-//       if (route.query.keyword) filter.keyword = route.query.keyword as string;
-//       if (route.query.type) filter.product_type = route.query.type as string;
-//       if (route.query.tab) filter.category = route.query.tab as string; 
-//       if (route.query.storage) filter.storage = route.query.storage as string;     
-//     }
-//     const { error } = await store.fetchProducts(filter)    
-//     if (error) {
-//       const { error: errorApi } = await store.fetchProductsApi(filter);
-//       if (errorApi) throw errorApi
-//     }
-//   } catch(error) {
-//     notification({
-//       message: "failed to fetch products",
-//       type: "failed",
-//       time: 5000
-//     })
-//   } finally {
-//     isLoading.value = false
-//   }
-// }
-// watch(() => route.query, () => handleFetchProduct())
-
-// handleFetchProduct()
 onMounted(() => keyword.value = route.query.keyword as string || "")
 </script>
 
@@ -293,6 +261,12 @@ onMounted(() => keyword.value = route.query.keyword as string || "")
           .psw-content {
             flex-direction: column;
             align-items: center;
+            .psw-desc {
+              padding: 0 16px;
+              h3 {
+                text-align: center;
+              }
+            }
           }
         }
       }

@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav v-if="!isBurgerNav">
+    <nav v-if="!isBurgerNav" class="navbar">
       <div>
         <div class="nav-top">
           <NuxtLink to="/"><NuxtImg src="/logo.png" class="logo" /></NuxtLink>
@@ -42,10 +42,30 @@
         </div>
       </div>
     </nav>
-    <div v-else class="nav-hamburger">
+    <nav v-else class="nav-hamburger">
       <NuxtLink to="/"><NuxtImg src="/logo.png" class="logo" /></NuxtLink>
-      <div><Icon name="gravity-ui:bars" class="icon-menu" /></div>
-    </div>
+      <div v-if="!route.path.includes('product')" class="nav-product">
+        <NuxtLink to="/products" class="navbar-right">Products</NuxtLink>
+      </div>
+      <div v-else>
+        <div @click="toggleNavBurger"><Icon name="gravity-ui:bars" class="icon-menu" /></div>
+        <div class="nav-burger-backdrop" v-if="isBurgerShow">
+          <div class="nav-burger-wrapper">
+            <div class="icon-wrapper">
+              <Icon name="gravity-ui:circle-xmark" />
+            </div>
+            <div
+              v-for="(pr, i) in productTypesData"
+              :key="i"
+              class="nav-accordion-wrapper"
+              @click="handleClickProductType(pr)"
+            >
+              <div>{{ pr.title }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
   </header>
 </template>
 
@@ -75,7 +95,11 @@ const handleClickTab = (val: string) => {
   router.push(`/products?tab=${val}`);
   window.scrollTo(0,0);
 }
+const toggleNavBurger = () => {
+  isBurgerShow.value = !isBurgerShow.value
+}
 const handleClickProductType = (val: IProductType) => {
+  isBurgerShow.value = false;
   router.push(`/products?tab=${val.category}&type=${val.slug}`);
   window.scrollTo(0,0);
 }
@@ -95,6 +119,7 @@ onUnmounted(() => window.removeEventListener("resize", handleResize));
 </script>
 
 <style lang="scss" scoped>
+@use "~/assets/scss/_animation.scss";
 header {
   position: fixed;
   top: 0;
@@ -103,7 +128,7 @@ header {
   z-index: 100;
   background-color: white;
 }
-nav {
+.navbar {
   & > div:not(:first-child) {
     border-bottom: 1px solid #DDDDDD;
   }
@@ -126,7 +151,6 @@ nav {
       color: black;
       cursor: pointer;
       text-decoration: none;
-      font-family: 'Sarabun', sans-serif;;
       padding-right: 32px;
     }
   }
@@ -194,8 +218,10 @@ nav {
 }
 .nav-hamburger {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 16px 32px;
+  position: relative;
   .logo {
     height: 32px;
     cursor: pointer;
@@ -203,6 +229,41 @@ nav {
   .icon-menu {
     height: 24px;
     width: 24px;
+  }
+  .nav-product {
+    a {
+      font-weight: 600;
+      font-size: $text-sm;
+      color: black;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+  .nav-burger-backdrop {
+    position: fixed;
+    background-color: #000000ef;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    .nav-burger-wrapper {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: fit-content;
+      background-color: white;
+      z-index: 30;
+      padding: 8px 16px;
+      animation: slide-right-left 0.5s ease-in-out forwards;
+      .icon-wrapper {
+        text-align: right;
+        margin-bottom: 16px;
+      }
+      .nav-accordion-wrapper {
+        padding: 8px;
+      }
+    }
   }
 }
 </style>

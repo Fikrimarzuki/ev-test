@@ -44,27 +44,6 @@ const keyword = computed(() => route.query.keyword || "")
 const products = computed(() => store.getProducts)
 const isLoading = ref(false);
 
-// async function fetchData() {
-//   if (products.value.length !== 0 || productType.value || keyword.value) return
-//   try {
-//     isLoading.value = true
-//     const { error } = await store.fetchProducts()
-//     if (error) {
-//       const { error:errorApi } = await store.fetchProductsApi()
-//       if (errorApi) throw errorApi
-//     }
-//   } catch(error) {
-//     notification({
-//       message: "There's something wrong when fetch products",
-//       type: "failed",
-//       time: 5000
-//     })
-//   } finally {
-//     isLoading.value = false
-//   }
-// }
-// fetchData()
-// watch(() => route.query, () => fetchData())
 async function handleFetchProduct() {
   if (isLoading.value) return
   try {
