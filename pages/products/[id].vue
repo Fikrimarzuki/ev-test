@@ -298,6 +298,9 @@ onUnmounted(() => store.resetProduct())
     .storage-container {
       font-size: $text-xxs;
       margin-top: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
       .storage-wrapper {
         padding: 8px;
         border: 1px solid black;

@@ -157,6 +157,8 @@ section {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        text-decoration: none;
+        color: black;
         .hss-card-header {
           position: absolute;
           text-align: center;
