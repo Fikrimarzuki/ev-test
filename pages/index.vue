@@ -20,7 +20,7 @@
       </div>
       <div class="hss-card-wrapper">
         <div class="hss-card">
-          <NuxtLink>
+          <NuxtLink to="/products/a5a55f90-f023-4db8-8673-5877975z1z21">
             <div class="hss-card-header">
               <h2>Galaxy A35 | A55 5G</h2>
               <div>Get awesome deals worth up to Rp1.5 Mio</div>
@@ -32,7 +32,7 @@
           </NuxtLink>
         </div>
         <div class="hss-card">
-          <NuxtLink>
+          <NuxtLink to="/products/42d89674-d02d-4f6a-9e4d-3f69e4c3e446">
             <NuxtImg
               class="hss-card-img"
               src="https://images.samsung.com/is/image/samsung/assets/id/offer/2024/1/eureka/S24-merch-tile.png?$160_160_PNG$"
@@ -44,7 +44,7 @@
           </NuxtLink>
         </div>
         <div class="hss-card">
-          <NuxtLink>
+          <NuxtLink to="/products/446841b1-28e9-4bd7-8c2b-4ed375c3a029">
             <NuxtImg
               class="hss-card-img"
               src="https://images.samsung.com/is/image/samsung/assets/id/2401/home/HOME_Q5_Merchandising_160x160_pc.png?$160_160_PNG$"
@@ -56,7 +56,7 @@
           </NuxtLink>
         </div>
         <div class="hss-card">
-          <NuxtLink>
+          <NuxtLink to="/products/b949bc1c-34bb-4bfd-8941-0738b469efcb">
             <NuxtImg
               class="hss-card-img-fit"
               src="https://images.samsung.com/is/image/samsung/assets/id/offer/2024/2/fit3/KV_Fit3_SMT_330x330_rev.png?$330_330_PNG$"
@@ -68,7 +68,7 @@
           </NuxtLink>
         </div>
         <div class="hss-card">
-          <NuxtLink>
+          <NuxtLink to="/products/a5a55f90-f023-4db8-8673-58779756b4de">
             <NuxtImg
               class="hss-card-img"
               src="https://images.samsung.com/is/image/samsung/assets/id/offer/2024/3/home/galaxy-a05s-light-violet.png?$160_160_PNG$"
@@ -92,9 +92,11 @@
 </template>
 
 <script lang="ts" setup>
+const router = useRouter();
 const keyword = ref("");
 const handleSearch = () => {
-  
+  if (!keyword.value) return;
+  router.push(`/products?keyword=${keyword.value}`)
 }
 </script>
 
@@ -179,6 +181,7 @@ section {
           display: flex;
           flex-direction: column;
           align-items: center;
+          padding: 0 16px;
           span {
             text-align: center;
             &:first-child {

@@ -15,8 +15,13 @@ const route = useRoute();
 const categories = data.categories;
 const paddingTop = computed(() => {
   if (route.path.includes("product")) {
-    if (categories.find(el => el.slug === route.query.tab)?.slug) return "196px"
-    return "103px"
+    if (
+      route.params.id ||
+      categories.find(el => el.slug === route.query.tab)?.slug
+    ) {
+      return "196px"
+    }
+    return "101px"
   } 
   return "68px"
 })

@@ -11,7 +11,31 @@
     </div>
     <NuxtImg
       class="psw-image"
-      src="https://images.samsung.com/is/image/samsung/assets/id/2307/pfs/09-hd01-Watch6-kv-pc-1440x640.jpg?imwidth=768" />
+      src="https://images.samsung.com/is/image/samsung/assets/id/2307/pfs/09-hd01-Watch6-kv-pc-1440x640.jpg?imwidth=768"
+    />
+    <div class="psw-title">
+      <h1>Watches</h1>
+      <p>Watches with so many feature.</p>
+    </div>
+    <div class="psw-content-container" v-if="!isLoading">
+      <div
+        v-for="(wtch, i) in watches.slice(0,4)"
+        :key="i"
+        class="psw-content-wrapper"
+      >
+        <NuxtImg :src="wtch.variations[0].images[0]" class="psw-content-img" />
+        <div class="psw-content">
+          <div class="psw-content-title">{{ wtch.title.split("(")[0] }}</div>
+          <p class="psw-content-desc">{{ wtch.description.split("\n")[0] }}</p>
+          <NuxtLink :to="`/products/${wtch.id}`" class="psw-content-btn">
+            Lebih detail
+          </NuxtLink>
+        </div>
+      </div>
+    </div>
+    <div v-else>
+      
+    </div>
   </section>
 </template>
 
@@ -21,6 +45,7 @@ const props = defineProps({
   isLoading: { type: Boolean, default: false },
   products: { type: Array<IProduct>, default: [] }
 })
+const watches = computed(() => props.products.filter((el) => el.category === "watches") || [])
 </script>
 
 <style lang="scss" scoped>
@@ -58,6 +83,52 @@ const props = defineProps({
   }
   .psw-image {
     width: 100%;
+  }
+  .psw-title {
+    text-align: center;
+    h1 {
+      font-size: 24px;
+    }
+    p {
+      font-size: $text-sm;
+    }
+  }
+  .psw-content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    padding: 16px 0 72px;
+    width: 100%;
+    .psw-content-wrapper {
+      position: relative;
+      background-color: #f7f7f7;
+      .psw-content-img {
+        object-fit: cover;
+      }
+      .psw-content {
+        padding: 0 32px 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .psw-content-title {
+          font-size: $text-sm;
+          text-align: center;
+          font-weight: 600;
+        }
+        .psw-content-desc {
+          text-align: center;
+          font-size: $text-xs;
+          min-height: 32px;
+        }
+        .psw-content-btn {
+          font-size: $text-xs;
+          font-weight: 600;
+          text-decoration: underline;
+          cursor: pointer;
+          color: black;
+        }
+      }
+    }
   }
 }
 </style>

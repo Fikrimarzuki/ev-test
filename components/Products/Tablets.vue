@@ -13,7 +13,31 @@
     </div>
     <NuxtImg
       class="pst-image"
-      src="https://images.samsung.com/is/image/samsung/assets/id/2307/pfs/07-hd01-Tab-S9-Series-kv-pc-1440x640.jpg?imwidth=768" />
+      src="https://images.samsung.com/is/image/samsung/assets/id/2307/pfs/07-hd01-Tab-S9-Series-kv-pc-1440x640.jpg?imwidth=768"
+    />
+    <div class="pst-title">
+      <h1>Tablets</h1>
+      <p>Tablets with so many feature.</p>
+    </div>
+    <div class="pst-content-container" v-if="!isLoading">
+      <div
+        v-for="(tbl, i) in tablets.slice(0,4)"
+        :key="i"
+        class="pst-content-wrapper"
+      >
+        <NuxtImg :src="tbl.variations[0].images[0]" class="pst-content-img" />
+        <div class="pst-content">
+          <div class="pst-content-title">{{ tbl.title }}</div>
+          <p class="pst-content-desc">{{ tbl.description.split("\n")[0] }}</p>
+          <NuxtLink :to="`/products/${tbl.id}`" class="pst-content-btn">
+            Lebih detail
+          </NuxtLink>
+        </div>
+      </div>
+    </div>
+    <div v-else>
+      
+    </div>
   </section>
 </template>
 
@@ -23,6 +47,7 @@ const props = defineProps({
   isLoading: { type: Boolean, default: false },
   products: { type: Array<IProduct>, default: [] }
 })
+const tablets = computed(() => props.products.filter((el) => el.category === "tablets") || [])
 </script>
 
 <style lang="scss" scoped>
@@ -60,6 +85,52 @@ const props = defineProps({
   }
   .pst-image {
     width: 100%;
+  }
+  .pst-title {
+    text-align: center;
+    h1 {
+      font-size: 24px;
+    }
+    p {
+      font-size: $text-sm;
+    }
+  }
+  .pst-content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    padding: 16px 0 72px;
+    width: 100%;
+    .pst-content-wrapper {
+      position: relative;
+      background-color: #f7f7f7;
+      .pst-content-img {
+        object-fit: cover;
+      }
+      .pst-content {
+        padding: 0 32px 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .pst-content-title {
+          font-size: $text-sm;
+          text-align: center;
+          font-weight: 600;
+        }
+        .pst-content-desc {
+          text-align: center;
+          font-size: $text-xs;
+          min-height: 32px;
+        }
+        .pst-content-btn {
+          font-size: $text-xs;
+          font-weight: 600;
+          text-decoration: underline;
+          cursor: pointer;
+          color: black;
+        }
+      }
+    }
   }
 }
 </style>

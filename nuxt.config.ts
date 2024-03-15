@@ -36,6 +36,8 @@ export default defineNuxtConfig({
     dirs: ["composables"]
   },
   runtimeConfig: {
-    BASE_URL: "http://localhost:3000"
+    public: {
+      BASE_URL: process.env.BASE_URL || "http://localhost:3000"
+    }
   }
 })

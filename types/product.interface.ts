@@ -1,7 +1,8 @@
 interface Variation {
   color: string;
+  color_code: string;
   storage: string[];
-  image: string[];
+  images: string[];
   feature: string;
   price?: number | null;
 }
@@ -23,7 +24,7 @@ interface IBuds {
 }
 
 export interface IProduct {
-  id: number;
+  id: string;
   title: string;
   description: string;
   category: string;
@@ -40,7 +41,6 @@ export interface IProduct {
   buds?: IBuds;
 }
 
-
 export interface ICategory {
   id: string;
   title: string;
@@ -54,4 +54,11 @@ export interface IProductType {
   short_desc: string;
   category: string;
   image: string;
+}
+
+export interface IProductFilter {
+  category?: string;
+  product_type?: string;
+  keyword?: string;
+  storage?: string;
 }

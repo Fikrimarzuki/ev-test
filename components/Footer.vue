@@ -44,7 +44,6 @@ footer {
   background-color: $primary;
   color: #DDDDDD;
   padding: 80px 0;
-  font-family: "Sarabun", "Sans-serif";
   position: relative;
   z-index: 1;
   .footer-section {

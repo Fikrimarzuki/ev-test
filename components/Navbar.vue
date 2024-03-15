@@ -25,12 +25,13 @@
           </div>
         </div>
       </div>
-      <div v-if="tab && tab !== 'all'">
+      <div v-if="tab && tab !== 'all'" class="nav-categories-wrapper">
         <div class="nav-categories">
           <div
             v-for="(pr, i) in productTypes"
             :key="i"
             class="nav-category-wrapper"
+            @click="handleClickProductType(pr)"
           >
             <NuxtImg :src="pr.image" class="ncw-img" />
             <div class="ncw-content">
@@ -45,18 +46,31 @@
 </template>
 
 <script lang="ts" setup>
+import type { IProductType } from "~/types/product.interface";
+import { useProductStore } from "~/stores/products.store";
 import data from "~/db.json";
 const route = useRoute();
 const router = useRouter();
+const store = useProductStore();
 const categories = data.categories;
 const productTypesData = data["product-types"];
 
-const tab = computed(() => categories.find(el => el.slug === route.query.tab)?.slug || "all")
+const product = computed(() => store.getProduct);
+const tab = computed(() => {
+  if (product.value.id) {
+    return product.value.category
+  }
+  return categories.find(el => el.slug === route.query.tab)?.slug || ""
+})
 const productTypes = computed(() => {
   return productTypesData.filter(el => el.category === tab.value);
 })
 const handleClickTab = (val: string) => {
   router.push(`/products?tab=${val}`);
+  window.scrollTo(0,0);
+}
+const handleClickProductType = (val: IProductType) => {
+  router.push(`/products?tab=${val.category}&type=${val.slug}`);
   window.scrollTo(0,0);
 }
 </script>
@@ -77,13 +91,15 @@ nav {
   .nav-top {
     max-width: 1440px;
     margin: auto;
-    padding: 16px;
+    padding: 16px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 36px;
     .logo {
       height: 32px;
       cursor: pointer;
+      padding-left: 32px;
     }
     .navbar-right {
       font-weight: 600;
@@ -92,6 +108,7 @@ nav {
       cursor: pointer;
       text-decoration: none;
       font-family: 'Sarabun', sans-serif;;
+      padding-right: 32px;
     }
   }
   .nav-bottom {
@@ -103,10 +120,12 @@ nav {
     margin: auto;
     .nav-bot-left {
       font-weight: 600;
+      padding-left: 16px;
     }
     .nav-bot-right {
       display: flex;
       gap: 16px;
+      padding-right: 16px;
       & > div {
         padding: 0 4px 16px;
         cursor: pointer;
@@ -120,27 +139,32 @@ nav {
       }
     }
   }
-  .nav-categories {
-    display: flex;
-    justify-content: space-around;
-    padding: 16px;
-    flex-shrink: 0;
+  .nav-categories-wrapper {
     background-color: #f7f7f7;
-    max-width: 1440px;
-    margin: auto;
-    .nav-category-wrapper {
+    padding: 0 16px;
+    .nav-categories {
       display: flex;
-      gap: 8px;
-      .ncw-img {
-        height: 60px;
-      }
-      .ncw-content {
-        .ncw-title {
-          font-weight: 600;
-          font-size: $text-sm;
+      justify-content: space-around;
+      padding: 16px 0;
+      flex-shrink: 0;
+      max-width: 1440px;
+      margin: auto;
+      .nav-category-wrapper {
+        display: flex;
+        gap: 8px;
+        cursor: pointer;
+        .ncw-img {
+          height: 60px;
         }
-        .ncw-short-desc {
-          font-size: $text-xs;
+        .ncw-content {
+          .ncw-title {
+            font-weight: 600;
+            font-size: $text-sm;
+          }
+          .ncw-short-desc {
+            padding: 8px 16px 0 0;
+            font-size: $text-xs;
+          }
         }
       }
     }

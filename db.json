@@ -145,8 +145,9 @@
       "variations": [
         {
           "color": "Sapphireblue",
+          "color_code": "#A7B5C8",
           "storage": ["512 GB"],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/2401/gallery/id-galaxy-s24-490055-sm-s921blbqxid-539374143?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/2401/gallery/id-galaxy-s24-490055-sm-s921blbqxid-539374146?$592_472_PNG$"
           ],
@@ -155,6 +156,7 @@
         },
         {
           "color": "Jade Green",
+          "color_code": "#C1D0BE",
           "storage": ["256 GB"],
           "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/2401/gallery/id-galaxy-s24-490055-sm-s921blgcxid-539374183?$592_472_PNG$",
@@ -187,8 +189,9 @@
       "variations": [
         {
           "color": "Titaniumgray",
+          "color_code": "#ACA49B",
           "storage": ["512 GB", "1 TB"],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/2401/gallery/id-galaxy-s24-s928-sm-s928bztqxid-539319725?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/2401/gallery/id-galaxy-s24-s928-sm-s928bztqxid-539319728?$592_472_PNG$"
           ],
@@ -196,6 +199,7 @@
         },
         {
           "color": "Titanium Violet",
+          "color_code": "#4D4E5F",
           "storage": ["256 GB"],
           "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/2401/gallery/id-galaxy-s24-s928-sm-s928bzvcxid-539319812?$592_472_PNG$",
@@ -227,8 +231,9 @@
       "variations": [
         {
           "color": "Classic Gold",
+          "color_code": "#FFD700",
           "storage": ["12 GB"],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-f946bakzxid/gallery/id-galaxy-z-fold5-f946-477726-sm-f946bakzxid-538198379?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-f946bakzxid/gallery/id-galaxy-z-fold5-f946-477726-sm-f946bakzxid-538198381?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-f946bakzxid/gallery/id-galaxy-z-fold5-f946-477726-sm-f946bakzxid-538198383?$592_472_PNG$"
@@ -259,8 +264,9 @@
       "variations": [
         {
           "color": "Cream",
+          "color_code": "#F0EAE0",
           "storage": ["512 GB"],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-z-flip5-f731-sm-f731bzeexid-537223841?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-z-flip5-f731-sm-f731bzeexid-537223843?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-z-flip5-f731-sm-f731bzeexid-537223844?$592_472_PNG$"
@@ -270,8 +276,9 @@
         },
         {
           "color": "Graphite",
+          "color_code": "#292B2D",
           "storage": ["512 GB"],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-z-flip5-f731-sm-f731bzaexid-537223798?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-z-flip5-f731-sm-f731bzaexid-537223800?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-z-flip5-f731-sm-f731bzaexid-537223801?$592_472_PNG$",
@@ -305,8 +312,9 @@
       "variations": [
         {
           "color": "Silver",
+          "color_code": "#CBC6C4",
           "storage": ["6 GB"],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-a057fzshxid/gallery/id-galaxy-a05s-sm-a057-sm-a057fzshxid-538374561?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-a057fzshxid/gallery/id-galaxy-a05s-sm-a057-sm-a057fzshxid-538374564?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-a057fzshxid/gallery/id-galaxy-a05s-sm-a057-sm-a057fzshxid-538374566?$592_472_PNG$"
@@ -316,6 +324,7 @@
         },
         {
           "color": "Light Violet",
+          "color_code": "#B4B5DF",
           "storage": ["6 GB"],
           "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-a057flvhxid/gallery/id-galaxy-a05s-sm-a057-479703-sm-a057flvhxid-540320089?$592_472_PNG$",
@@ -348,8 +357,9 @@
       "variations": [
         {
           "color": "Awesome Lilac",
+          "color_code": "#D4C7D9",
           "storage": ["128 GB", "256 GB"],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-a356elvgxid/gallery/id-galaxy-a35-5g-sm-a356-sm-a356elvgxid-540157786?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-a356elvgxid/gallery/id-galaxy-a35-5g-sm-a356-sm-a356elvgxid-540157788?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-a356elvgxid/gallery/id-galaxy-a35-5g-sm-a356-sm-a356elvgxid-540157789?$592_472_PNG$"
@@ -359,6 +369,7 @@
         },
         {
           "color": "Awesome Iceblue",
+          "color_code": "#CBD9E7",
           "storage": ["128 GB", "256 GB"],
           "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-a356elbgxid/gallery/id-galaxy-a35-5g-sm-a356-sm-a356elbgxid-540157701?$592_472_PNG$",
@@ -392,8 +403,9 @@
       "variations": [
         {
           "color": "Dark Blue",
+          "color_code": "#3A414A",
           "storage": ["8 GB"],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-m346bdbgxid/gallery/id-galaxy-m34-5g-sm-m346-sm-m346bdbgxid-538770176?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-m346bdbgxid/gallery/id-galaxy-m34-5g-sm-m346-sm-m346bdbgxid-538770178?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-m346bdbgxid/gallery/id-galaxy-m34-5g-sm-m346-sm-m346bdbgxid-538770180?$592_472_PNG$"
@@ -403,6 +415,7 @@
         },
         {
           "color": "Silver",
+          "color_code": "#C3C5C4",
           "storage": ["8 GB"],
           "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-m346bzsgxid/gallery/id-galaxy-m34-5g-sm-m346-sm-m346bzsgxid-538770220?$592_472_PNG$",
@@ -435,8 +448,9 @@
       "variations": [
         {
           "color": "Light Green",
+          "color_code": "#C1D1A6",
           "storage": ["128 GB"],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x516blgaxid/gallery/id-galaxy-tab-s9-fe-sm-x516-sm-x516blgaxid-538495098?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x516blgaxid/gallery/id-galaxy-tab-s9-fe-sm-x516-sm-x516blgaxid-538495097?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x516blgaxid/gallery/id-galaxy-tab-s9-fe-sm-x516-sm-x516blgaxid-538495099?$592_472_PNG$"
@@ -446,6 +460,7 @@
         },
         {
           "color": "Lavender",
+          "color_code": "#DCCED9",
           "storage": ["128 GB"],
           "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x516bliaxid/gallery/id-galaxy-tab-s9-fe-sm-x516-sm-x516bliaxid-538495184?$592_472_PNG$",
@@ -478,8 +493,9 @@
       "variations": [
         {
           "color": "Light Green",
+          "color_code": "#C1D1A6",
           "storage": ["256 GB"],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x616blgexid/gallery/id-galaxy-tab-s9-fe-plus-sm-x616-sm-x616blgexid-538495419?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x616blgexid/gallery/id-galaxy-tab-s9-fe-plus-sm-x616-sm-x616blgexid-538495420?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x616blgexid/gallery/id-galaxy-tab-s9-fe-plus-sm-x616-sm-x616blgexid-538495424?$592_472_PNG$"
@@ -489,6 +505,7 @@
         },
         {
           "color": "Lavender",
+          "color_code": "#DCCED9",
           "storage": ["256 GB"],
           "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x616bliexid/gallery/id-galaxy-tab-s9-fe-plus-sm-x616-sm-x616bliexid-538495449?$592_472_PNG$",
@@ -522,8 +539,9 @@
       "variations": [
         {
           "color": "Gray",
+          "color_code": "#808080",
           "storage": ["128 GB"],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x510nzaaxid/gallery/id-galaxy-tab-s9-fe-sm-x510-sm-x510nzaaxid-538495370?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x510nzaaxid/gallery/id-galaxy-tab-s9-fe-sm-x510-sm-x510nzaaxid-538495371?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x510nzaaxid/gallery/id-galaxy-tab-s9-fe-sm-x510-sm-x510nzaaxid-538495374?$592_472_PNG$"
@@ -549,14 +567,15 @@
     {
       "id": "69d8a25f-a336-4575-8aee-9c90cdb63dc1",
       "title": "Galaxy Tab A9 LTE Kids Package",
-      "description": "Exclusive Kids Package terdiri dari Puffy Cover + Crayon Stylus + Kids Sticker + Travel Adapter 20W + Gratis 1 Tahun Samsung Care+\nHarga Rp3.299.000 sudah termasuk Tab A9 LTE dan Kids Package\n Puffy Cover, Crayon Stylus, dan Sticker tidak dijual terpisah",
+      "description": "Exclusive Kids Package\nHarga Rp3.299.000 sudah termasuk Tab A9 LTE dan Kids Package\n Puffy Cover, Crayon Stylus, dan Sticker tidak dijual terpisah",
       "category": "tablets",
       "product_type": "galaxy-tab-a",
       "variations": [
         {
           "color": "",
+          "color_code": "",
           "storage": ["64 GB"],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/f-sm-x115nzaax/gallery/id-galaxy-tab-a9-lte-kids-package-f-sm-x115nzaax-thumb-539237560?$592_472_PNG$"
           ],
           "feature": "8.7“ full rectangle screen size\nExternal storage up to 1TB\nMulti-tasking up to two apps\nCPU Speed 2.2GHz, 2GHz",
@@ -586,8 +605,9 @@
       "variations": [
         {
           "color": "Graphite",
+          "color_code": "#545356",
           "storage": ["64 GB"],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x110nzaaxid/gallery/id-galaxy-tab-a9-sm-x110-sm-x110nzaaxid-538770087?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x110nzaaxid/gallery/id-galaxy-tab-a9-sm-x110-sm-x110nzaaxid-538770088?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-x110nzaaxid/gallery/id-galaxy-tab-a9-sm-x110-sm-x110nzaaxid-538770090?$592_472_PNG$"
@@ -619,8 +639,9 @@
       "variations": [
         {
           "color": "Gray",
+          "color_code": "#545356",
           "storage": ["32 GB"],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-t220nzaaxid/gallery/id-galaxy-tab-a7-lite-wifi-t220-sm-t220nzaaxid-534794499?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-t220nzaaxid/gallery/id-galaxy-tab-a7-lite-wifi-t220-sm-t220nzaaxid-534794501?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-t220nzaaxid/gallery/id-galaxy-tab-a7-lite-wifi-t220-sm-t220nzaaxid-534794504?$592_472_PNG$"
@@ -652,8 +673,9 @@
       "variations": [
         {
           "color": "Beige",
+          "color_code": "#F0EAE0",
           "storage": [],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-watch6-r935-sm-r930nzeaxse-537405326?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-watch6-r935-sm-r930nzeaxse-537405327?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-watch6-r935-sm-r930nzeaxse-537405328?$592_472_PNG$"
@@ -663,6 +685,7 @@
         },
         {
           "color": "Black",
+          "color_code": "#4A4A4D",
           "storage": [],
           "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-watch6-r935-sm-r930nzkaxse-537405353?$592_472_PNG$",
@@ -697,8 +720,9 @@
       "variations": [
         {
           "color": "Sapphire",
+          "color_code": "#6B7D98",
           "storage": [],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-watch5-44mm-sm-r910nzbaxse-533189002?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-watch5-44mm-sm-r910nzbaxse-533189003?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-watch5-44mm-sm-r910nzbaxse-533189004?$592_472_PNG$"
@@ -708,6 +732,7 @@
         },
         {
           "color": "Silver",
+          "color_code": "#C7C8C9",
           "storage": [],
           "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-watch5-44mm-sm-r910nzsaxse-533189047?$592_472_PNG$",
@@ -741,8 +766,9 @@
       "variations": [
         {
           "color": "Mystic Bronze",
+          "color_code": "#89675F",
           "storage": [],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/id/galaxy-note20/gallery/id-galaxy-watch3-r850-sm-r850nzdaxse-dynamicmysticbronze-275072552?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/id/galaxy-note20/gallery/id-galaxy-watch3-r850-sm-r850nzdaxse-rperspectivemysticbronze-275072551?$592_472_PNG$"
           ],
@@ -773,8 +799,9 @@
       "variations": [
         {
           "color": "Silver",
+          "color_code": "#DBDBDB",
           "storage": [],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-watch6-classic-r965-sm-r960nzsaxse-537432744?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-watch6-classic-r965-sm-r960nzsaxse-537432745?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/2307/gallery/id-galaxy-watch6-classic-r965-sm-r960nzsaxse-537432746?$592_472_PNG$"
@@ -806,8 +833,9 @@
       "variations": [
         {
           "color": "Black Titanium",
+          "color_code": "#404145",
           "storage": [],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-watch5-pro-sm-r920nzkaxse-533189682?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-watch5-pro-sm-r920nzkaxse-533189683?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-watch5-pro-sm-r920nzkaxse-533189684?$592_472_PNG$"
@@ -832,15 +860,16 @@
     },
     {
       "id": "b949bc1c-34bb-4bfd-8941-0738b469efcb",
-      "title": "Galaxy Fit3",
+      "title": "Galaxy Fit 3",
       "description": "1.6' AMOLED display providing a clear viewing area for easy interaction\nCharges up to 65% in 30 minutes and lasts up to 13 days at a full charge",
       "category": "watches",
       "product_type": "galaxy-watch-fit",
       "variations": [
         {
           "color": "Gray",
+          "color_code": "#3D3F43",
           "storage": [],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-r390nzaaxse/gallery/id-galaxy-fit3-r390-sm-r390nzaaxse-539926081?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-r390nzaaxse/gallery/id-galaxy-fit3-r390-sm-r390nzaaxse-539926082?$592_472_PNG$"
           ],
@@ -849,8 +878,9 @@
         },
         {
           "color": "Pink Gold",
+          "color_code": "#FCD0B8",
           "storage": [],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-r390nidaxse/gallery/id-galaxy-fit3-r390-sm-r390nidaxse-539926065?$592_472_PNG$"
           ],
           "feature": "",
@@ -880,8 +910,9 @@
       "variations": [
         {
           "color": "Graphite",
+          "color_code": "#FCD0B8",
           "storage": [],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-buds2-pro-r510-sm-r510nzaaxse-533199900?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-buds2-pro-r510-sm-r510nzaaxse-533199902?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/2208/gallery/id-galaxy-buds2-pro-r510-sm-r510nzaaxse-533199903?$592_472_PNG$",
@@ -921,8 +952,9 @@
       "variations": [
         {
           "color": "Graphite",
+          "color_code": "#FCD0B8",
           "storage": [],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/2108/gallery/id-galaxy-buds2-r177-sm-r177nzkaxse-481740808?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/2108/gallery/id-galaxy-buds2-r177-sm-r177nzkaxse-481740810?$592_472_PNG$"
           ],
@@ -960,8 +992,9 @@
       "variations": [
         {
           "color": "white",
+          "color_code": "#FFFFFF",
           "storage": [],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-r400nzwaxse/gallery/id-galaxy-buds-fe-sm-r400nzwaxse-538463244?$2052_1641_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-r400nzwaxse/gallery/id-galaxy-buds-fe-sm-r400nzwaxse-538463230?$684_547_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/id/sm-r400nzwaxse/gallery/id-galaxy-buds-fe-sm-r400nzwaxse-538463231?$684_547_PNG$"
@@ -1000,8 +1033,9 @@
       "variations": [
         {
           "color": "Mystic Bronze",
+          "color_code": "#9A716E",
           "storage": [],
-          "image": [
+          "images": [
             "https://images.samsung.com/is/image/samsung/id/galaxy-note20/gallery/id-galaxy-buds-live-r180-sm-r180nznaxse-backmysticbronze-275665479?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/id/galaxy-note20/gallery/id-galaxy-buds-live-r180-sm-r180nznaxse-dynamicmysticbronze-275665477?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/id/galaxy-note20/gallery/id-galaxy-buds-live-r180-sm-r180nznaxse-casedynamiccombinationmysticbronze-275665476?$592_472_PNG$"
@@ -1030,37 +1064,6 @@
         "battery_capacity_earbud": "60 mAh",
         "battery_capacity_case": "472 mAh"
       }
-    },
-    {
-      "id": "",
-      "title": "",
-      "description": "",
-      "category": "",
-      "product_type": "",
-      "variations": [
-        {
-          "color": "",
-          "storage": [],
-          "image": [
-
-          ],
-          "feature": "",
-          "price": 0
-        }
-      ],
-      "cpu_speed": "",
-      "cpu_type": "",
-      "main_display": {
-        "size": "",
-        "resolution": "",
-        "technology": "",
-        "color_depth": "",
-        "max_refresh_rate": null
-      },
-      "auto_focus": null,
-      "camera_resolution": null,
-      "storage": 0,
-      "memory": 0
     }
   ]
 }
