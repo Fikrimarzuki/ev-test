@@ -75,4 +75,4 @@ bun run preview
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
 
-Link-Deploy: https://evermost-test.fikrimarzuki.com/
+Link-Deploy: https://evermos-test.fikrimarzuki.com/

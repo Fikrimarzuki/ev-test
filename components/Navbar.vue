@@ -51,7 +51,7 @@
         <div @click="toggleNavBurger"><Icon name="gravity-ui:bars" class="icon-menu" /></div>
         <div class="nav-burger-backdrop" v-if="isBurgerShow">
           <div class="nav-burger-wrapper">
-            <div class="icon-wrapper">
+            <div class="icon-wrapper" @click="toggleNavBurger">
               <Icon name="gravity-ui:circle-xmark" />
             </div>
             <div

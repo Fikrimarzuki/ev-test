@@ -23,7 +23,7 @@
           <NuxtLink to="/products/a5a55f90-f023-4db8-8673-5877975z1z21">
             <div class="hss-card-header">
               <h2>Galaxy A35 | A55 5G</h2>
-              <div>Get awesome deals worth up to Rp1.5 Mio</div>
+              <span>Get awesome deals worth up to Rp1.5 Mio</span>
               <div class="detail-btn anima-show">Lihat Detail</div>
             </div>
             <NuxtImg
@@ -86,7 +86,7 @@
       <h1>Cari produk Samsung lainnya?</h1>
       <div class="search-wrapper">
         <Icon name="material-symbols:search-rounded" class="search-icon" @click="handleSearch" />
-        <input type="text" placeholder="Search Keyword" v-model="keyword" @keyup.enter="handleSearch" />
+        <input type="text" placeholder="Search Product" v-model="keyword" @keyup.enter="handleSearch" />
       </div>
     </section>
   </div>
@@ -114,9 +114,10 @@ section {
     left: 88px;
     top: 25%;
     .hsf-title {
-      font-size: 32px;
+      font-size: clamp(16px, 5vw, 32px);
     }
     p {
+      font-size: clamp(10px, 1.9vw, 16px);
       line-height: 1.33;
       word-wrap: break-word;
     }
@@ -132,10 +133,10 @@ section {
     text-align: center;
     padding-bottom: 16px;
     h2 {
-      font-size: 32px;
+      font-size: clamp(24px, 5vw, 32px);
     }
     h3 {
-      font-size: 16px;
+      font-size: clamp(14px, 1.9vw, 16px);
     }
   }
   .hss-card-wrapper {
@@ -169,6 +170,13 @@ section {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          h2 {
+            font-size: clamp(16px, 1.9vw, 22px);
+          }
+          span {
+            font-size: clamp(12px, 1.9vw, 14px);
+            padding: 0 4px;
+          }
           .detail-btn {
             margin-top: 16px;
             padding: 8px 16px;
@@ -237,12 +245,16 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 64px 0 120px;
   h1 {
-    font-size: 32px;
+    font-size: clamp(24px, 1vw, 32px);
+    text-align: center;
   }
   .search-wrapper {
     position: relative;
+    display: flex;
+    justify-content: center;
     .search-icon {
       position: absolute;
       height: 24px;
@@ -253,7 +265,8 @@ section {
     input {
       border-radius: 25px;
       padding: 8px 16px 8px 42px;
-      width: 320px;
+      max-width: 320px;
+      width: 100%;
       height: 28px;
     }
   }
@@ -278,6 +291,11 @@ section {
   }
 }
 @media screen and (max-width: 768px) {
+  .home-section-frst {
+    .hsf-desc {
+      top: 10%;
+    }
+  }
   .home-section-scnd {
     .hss-card-wrapper {
       grid-template-columns: 1fr;
