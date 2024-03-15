@@ -35,4 +35,11 @@ main {
     padding-top: v-bind(paddingTop);
   }
 }
+@media only screen and (max-width: 768px) {
+  main {
+    .page-wrapper {
+      padding-top: 68px;
+    }
+  }
+}
 </style>

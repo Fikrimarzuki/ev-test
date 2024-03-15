@@ -41,31 +41,33 @@
         </div>
       </div>
       <div>
-        <h3>{{ product.title }}</h3>
-        <h2 v-if="variations[varIndex].price">{{ formatRupiahUtil(variations[varIndex].price || 0) }}</h2>
-        <div v-if="variations.find(el => el.color)" class="color-container">
-          <div class="color-title">
-            <span>Warna:</span>
-            <span>{{ variations[varIndex].color }}</span>
+        <div class="detail-info">
+          <h3>{{ product.title }}</h3>
+          <h2 v-if="variations[varIndex].price">{{ formatRupiahUtil(variations[varIndex].price || 0) }}</h2>
+          <div v-if="variations.find(el => el.color)" class="color-container">
+            <div class="color-title">
+              <span>Warna:</span>
+              <span>{{ variations[varIndex].color }}</span>
+            </div>
+            <div class="color-wrapper">
+              <div
+                v-for="(variation, i) in variations"
+                :key="i"
+                class="color-icon"
+                :class="{ active: i === varIndex }"
+                :style="`background: ${variation.color_code}`"
+                @click="handleClickColor(i)"
+              />
+            </div>
           </div>
-          <div class="color-wrapper">
+          <div v-if="variations[varIndex].storage.length" class="storage-container">
             <div
-              v-for="(variation, i) in variations"
+              v-for="(storage, i) in variations[varIndex].storage"
               :key="i"
-              class="color-icon"
-              :class="{ active: i === varIndex }"
-              :style="`background: ${variation.color_code}`"
-              @click="handleClickColor(i)"
-            />
-          </div>
-        </div>
-        <div v-if="variations[varIndex].storage.length" class="storage-container">
-          <div
-            v-for="(storage, i) in variations[varIndex].storage"
-            :key="i"
-            class="storage-wrapper"
-          >
-            {{ storage }}
+              class="storage-wrapper"
+            >
+              {{ storage }}
+            </div>
           </div>
         </div>
         <div v-if="product.description" class="description-container">
@@ -387,6 +389,24 @@ onUnmounted(() => store.resetProduct())
       border-radius: 25px;
       transform: scale(1);
     	animation: pulse 2s infinite;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-page-section {
+    .product-page-wrapper {
+      grid-template-columns: 1fr;
+      .detail-info {
+        text-align: center;
+        .color-container {
+          .color-wrapper {
+            justify-content: center;
+          }
+        }
+        .storage-container {
+          justify-content: center;
+        }
+      }
     }
   }
 }

@@ -1,15 +1,17 @@
 <template>
   <section class="prd-section-smartphone">
-    <div class="pss-desc">
-      <h1>Galaxy S24 Ultra</h1>
-      <p>
-        Get epic cashback up to Rp3 Mio*<br/>
-        and up to Rp3.7 Mio* off when<br/>
-        buy 2 or more Galaxy products
-      </p>
-      <button>
-        Buy now
-      </button>
+    <div class="pss-desc-wrapper">
+      <div class="pss-desc">
+        <h1>Galaxy S24 Ultra</h1>
+        <p>
+          Get epic cashback up to Rp3 Mio*<br/>
+          and up to Rp3.7 Mio* off when<br/>
+          buy 2 or more Galaxy products
+        </p>
+        <button>
+          Buy now
+        </button>
+      </div>
     </div>
     <NuxtImg
       class="pss-image"
@@ -57,33 +59,35 @@ const smartphones = computed(() => props.products.filter((el) => el.category ===
 .prd-section-smartphone {
   position: relative;
   width: 100%;
-  .pss-desc {
+  .pss-desc-wrapper {
     position: absolute;
-    min-width: 360px;
-    height: 360px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     left: 10%;
-    h1 {
-      font-size: 42px;
-      margin-bottom: 20px
-    }
-    p {
-      line-height: 1.5;
-      margin-top: 0;
-      margin-bottom: 32px;
-    }
-    button {
-      color: white;
-      background-color: black;
-      outline: none;
-      border: none;
-      width: fit-content;
-      padding: 12px 24px;
-      border-radius: 25px;
-      font-weight: 600;
-      font-size: $text-xs;
+    top: 64px;
+    .pss-desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        font-size: clamp(16px, 5vw, 42px);
+        margin-bottom: 20px
+      }
+      p {
+        font-size: clamp(10px, 1.9vw, 16px);
+        line-height: 1.5;
+        margin-top: 0;
+        margin-bottom: 32px;
+      }
+      button {
+        color: white;
+        background-color: black;
+        outline: none;
+        border: none;
+        width: fit-content;
+        padding: 12px 24px;
+        border-radius: 25px;
+        font-weight: 600;
+        font-size: $text-xs;
+      }
     }
   }
   .pss-image {
@@ -152,6 +156,47 @@ const smartphones = computed(() => props.products.filter((el) => el.category ===
       background-color: rgba(192, 192, 192, 0.863);
       border-radius: 25px;
       animation: pulse 2s infinite;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .prd-section-smartphone {
+    .pss-desc-wrapper {
+      top: 32px;
+    }
+    .pss-content-container,
+    .pss-loading-wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@media only screen and (max-width: 620px) {
+  .prd-section-smartphone {
+    .pss-desc-wrapper {
+      .pss-desc {
+        button {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 368px) {
+  .prd-section-smartphone {
+    .pss-desc-wrapper {
+      top: 16px;
+      .pss-desc {
+        h1 {
+          margin: 8px 0
+        }
+        p {
+          margin-bottom: 8px;
+        }
+      }
+    }
+    .pss-content-container,
+    .pss-loading-wrapper {
+      grid-template-columns: 1fr;
     }
   }
 }

@@ -1,15 +1,17 @@
 <template>
   <section class="prd-section-tablet">
-    <div class="pst-desc">
-      <h1>Galaxy Tab S9 Series</h1>
-      <p>
-        Get epic cashback up to Rp3 Mio*<br/>
-        and up to Rp3.7 Mio* off when<br/>
-        buy 2 or more Galaxy products
-      </p>
-      <button>
-        Buy now
-      </button>
+    <div class="pst-desc-wrapper">
+      <div class="pst-desc">
+        <h1>Galaxy Tab S9 Series</h1>
+        <p>
+          Get epic cashback up to Rp3 Mio*<br/>
+          and up to Rp3.7 Mio* off when<br/>
+          buy 2 or more Galaxy products
+        </p>
+        <button>
+          Buy now
+        </button>
+      </div>
     </div>
     <NuxtImg
       class="pst-image"
@@ -57,33 +59,35 @@ const tablets = computed(() => props.products.filter((el) => el.category === "ta
 .prd-section-tablet {
   position: relative;
   width: 100%;
-  .pst-desc {
+  .pst-desc-wrapper {
     position: absolute;
-    min-width: 360px;
-    height: 360px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     left: 10%;
-    h1 {
-      font-size: 42px;
-      margin-bottom: 20px
-    }
-    p {
-      line-height: 1.5;
-      margin-top: 0;
-      margin-bottom: 32px;
-    }
-    button {
-      color: white;
-      background-color: black;
-      outline: none;
-      border: none;
-      width: fit-content;
-      padding: 12px 24px;
-      border-radius: 25px;
-      font-weight: 600;
-      font-size: $text-xs;
+    top: 64px;
+    .pst-desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        font-size: clamp(16px, 5vw, 42px);
+        margin-bottom: 20px
+      }
+      p {
+        font-size: clamp(10px, 1.9vw, 16px);
+        line-height: 1.5;
+        margin-top: 0;
+        margin-bottom: 32px;
+      }
+      button {
+        color: white;
+        background-color: black;
+        outline: none;
+        border: none;
+        width: fit-content;
+        padding: 12px 24px;
+        border-radius: 25px;
+        font-weight: 600;
+        font-size: $text-xs;
+      }
     }
   }
   .pst-image {
@@ -113,6 +117,7 @@ const tablets = computed(() => props.products.filter((el) => el.category === "ta
         justify-content: center;
         .pst-content-img {
           object-fit: cover;
+          width: 100%;
         }
       }
       .pst-content {
@@ -151,6 +156,47 @@ const tablets = computed(() => props.products.filter((el) => el.category === "ta
       background-color: rgba(192, 192, 192, 0.863);
       border-radius: 25px;
       animation: pulse 2s infinite;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .prd-section-tablet {
+    .pst-desc-wrapper {
+      top: 32px;
+    }
+    .pst-content-container,
+    .pst-loading-wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@media only screen and (max-width: 620px) {
+  .prd-section-tablet {
+    .pst-desc-wrapper {
+      .pst-desc {
+        button {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 368px) {
+  .prd-section-tablet {
+    .pst-desc-wrapper {
+      top: 16px;
+      .pst-desc {
+        h1 {
+          margin: 8px 0
+        }
+        p {
+          margin-bottom: 8px;
+        }
+      }
+    }
+    .pst-content-container,
+    .pst-loading-wrapper {
+      grid-template-columns: 1fr;
     }
   }
 }

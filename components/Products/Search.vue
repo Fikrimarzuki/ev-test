@@ -38,7 +38,9 @@
       <div class="psw-right-wrapper" v-else>
         <div v-for="(pr, i) in products" :key="i" class="psw-content-wrapper">
           <div class="psw-content">
-            <NuxtImg :src="pr.variations[0].images[0]" />
+            <div class="psw-img-wrapper">
+              <NuxtImg :src="pr.variations[0].images[0]" class="psw-img" />
+            </div>
             <div class="psw-desc">
               <h3>{{ pr.title }}</h3>
               <ul>
@@ -232,7 +234,7 @@ onMounted(() => keyword.value = route.query.keyword as string || "")
       .psw-content-wrapper {
         display: flex;
         justify-content: space-between;
-        height: 172px;
+        min-height: 172px;
         background-color: white;
         border-radius: 15px;
         margin-bottom: 16px;
@@ -241,14 +243,23 @@ onMounted(() => keyword.value = route.query.keyword as string || "")
         }
         .psw-content {
           display: flex;
+          .psw-img-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .psw-img {
+              max-height: 172px;
+            }
+          }
           .psw-desc {
             padding-top: 16px;
             ul {
               margin: 0;
               padding: 0;
               padding-left: 16px;
+              padding-bottom: 16px;
               li {
-                font-size: $text-sm;
+                font-size: clamp(12px, 1.5vw, $text-sm);
               }
             }
           }
@@ -266,6 +277,22 @@ onMounted(() => keyword.value = route.query.keyword as string || "")
             background-color: black;
             color: white;
             cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-search-section {
+    .product-search-wrapper {
+      grid-template-columns: 1fr;
+      .psw-right-wrapper {
+        .psw-content-wrapper {
+          flex-direction: column;
+          .psw-content {
+            flex-direction: column;
+            align-items: center;
           }
         }
       }

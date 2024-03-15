@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav>
+    <nav v-if="!isBurgerNav">
       <div>
         <div class="nav-top">
           <NuxtLink to="/"><NuxtImg src="/logo.png" class="logo" /></NuxtLink>
@@ -42,6 +42,10 @@
         </div>
       </div>
     </nav>
+    <div v-else class="nav-hamburger">
+      <NuxtLink to="/"><NuxtImg src="/logo.png" class="logo" /></NuxtLink>
+      <div><Icon name="gravity-ui:bars" class="icon-menu" /></div>
+    </div>
   </header>
 </template>
 
@@ -54,6 +58,8 @@ const router = useRouter();
 const store = useProductStore();
 const categories = data.categories;
 const productTypesData = data["product-types"];
+const isBurgerNav = ref(false);
+const isBurgerShow = ref(false);
 
 const product = computed(() => store.getProduct);
 const tab = computed(() => {
@@ -73,6 +79,19 @@ const handleClickProductType = (val: IProductType) => {
   router.push(`/products?tab=${val.category}&type=${val.slug}`);
   window.scrollTo(0,0);
 }
+const handleResize = () => {
+  if (window.innerWidth <= 768) {
+    isBurgerNav.value = true;
+    isBurgerShow.value = false;
+  } else {
+    isBurgerNav.value = false;
+  }
+}
+onMounted(() => {
+  window.addEventListener("resize", handleResize);
+  handleResize();
+})
+onUnmounted(() => window.removeEventListener("resize", handleResize));
 </script>
 
 <style lang="scss" scoped>
@@ -149,10 +168,13 @@ nav {
       flex-shrink: 0;
       max-width: 1440px;
       margin: auto;
+      gap:8px;
       .nav-category-wrapper {
         display: flex;
         gap: 8px;
         cursor: pointer;
+        flex: 1 1 0;
+        justify-content: center;
         .ncw-img {
           height: 60px;
         }
@@ -168,6 +190,19 @@ nav {
         }
       }
     }
+  }
+}
+.nav-hamburger {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+  .logo {
+    height: 32px;
+    cursor: pointer;
+  }
+  .icon-menu {
+    height: 24px;
+    width: 24px;
   }
 }
 </style>
