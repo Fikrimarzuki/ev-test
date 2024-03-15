@@ -33,8 +33,8 @@
         </div>
       </div>
     </div>
-    <div v-else>
-      
+    <div v-else class="psw-loading-wrapper">
+      <div v-for="(_, i) in [1,2,3,4]" class="psw-content-loading"></div>
     </div>
   </section>
 </template>
@@ -49,6 +49,7 @@ const watches = computed(() => props.products.filter((el) => el.category === "wa
 </script>
 
 <style lang="scss" scoped>
+@use "~/assets/scss/_animation.scss";
 .prd-section-watch {
   position: relative;
   width: 100%;
@@ -128,6 +129,19 @@ const watches = computed(() => props.products.filter((el) => el.category === "wa
           color: black;
         }
       }
+    }
+  }
+  .psw-loading-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+    padding: 16px 0 72px;
+    .psw-content-loading {
+      height: 360px;
+      width: 100%;
+      background-color: rgba(192, 192, 192, 0.863);
+      border-radius: 25px;
+      animation: pulse 2s infinite;
     }
   }
 }

@@ -24,6 +24,7 @@
             <div class="hss-card-header">
               <h2>Galaxy A35 | A55 5G</h2>
               <div>Get awesome deals worth up to Rp1.5 Mio</div>
+              <div class="detail-btn anima-show">Lihat Detail</div>
             </div>
             <NuxtImg
               class="hss-card-img-a35"
@@ -101,6 +102,7 @@ const handleSearch = () => {
 </script>
 
 <style lang="scss" scoped>
+@use "~/assets/scss/_animation.scss";
 section {
   max-width: 1440px;
   margin: auto;
@@ -163,6 +165,20 @@ section {
           position: absolute;
           text-align: center;
           top: 5%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .detail-btn {
+          margin-top: 16px;
+          padding: 8px 16px;
+          border-radius: 25px;
+          background-color: black;
+          color: white;
+          width: fit-content;
+          opacity: 0;
+          transition: opacity 0.25s ease-in-out;
         }
         .hss-card-img-a35 {
           width: 100%;
@@ -205,6 +221,13 @@ section {
         }
         p {
           font-size: $text-sm;
+        }
+      }
+      &:hover {
+        a {
+          .detail-btn {
+            opacity: 1;
+          }
         }
       }
     }

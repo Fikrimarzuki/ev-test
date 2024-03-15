@@ -21,11 +21,13 @@
     </div>
     <div class="pss-content-container" v-if="!isLoading">
       <div
-        v-for="(smp, i) in smartphones.slice(0,4)"
+        v-for="(smp, i) in smartphones"
         :key="i"
         class="pss-content-wrapper"
       >
-        <NuxtImg :src="smp.variations[0].images[0]" class="pss-content-img" />
+        <div class="pss-img-wrapper">
+          <NuxtImg :src="smp.variations[0].images[0]" class="pss-content-img" />
+        </div>
         <div class="pss-content">
           <div class="pss-content-title">{{ smp.title }}</div>
           <p class="pss-content-desc">{{ smp.description.split("\n")[0] }}</p>
@@ -35,8 +37,8 @@
         </div>
       </div>
     </div>
-    <div v-else>
-      
+    <div v-else class="pss-loading-wrapper">
+      <div v-for="(_, i) in [1,2,3,4]" class="pss-content-loading"></div>
     </div>
   </section>
 </template>
@@ -47,10 +49,11 @@ const props = defineProps({
   isLoading: { type: Boolean, default: false },
   products: { type: Array<IProduct>, default: [] }
 })
-const smartphones = computed(() => props.products.filter((el) => el.category === "smartphones") || [])
+const smartphones = computed(() => props.products.filter((el) => el.category === "smartphones").slice(0,4) || [])
 </script>
 
 <style lang="scss" scoped>
+@use "~/assets/scss/_animation.scss";
 .prd-section-smartphone {
   position: relative;
   width: 100%;
@@ -104,8 +107,14 @@ const smartphones = computed(() => props.products.filter((el) => el.category ===
     .pss-content-wrapper {
       position: relative;
       background-color: #f7f7f7;
-      .pss-content-img {
-        object-fit: cover;
+      .pss-img-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .pss-content-img {
+          object-fit: cover;
+          width: 100%;
+        }
       }
       .pss-content {
         padding: 0 32px 32px;
@@ -130,6 +139,19 @@ const smartphones = computed(() => props.products.filter((el) => el.category ===
           color: black;
         }
       }
+    }
+  }
+  .pss-loading-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+    padding: 16px 0 72px;
+    .pss-content-loading {
+      height: 360px;
+      width: 100%;
+      background-color: rgba(192, 192, 192, 0.863);
+      border-radius: 25px;
+      animation: pulse 2s infinite;
     }
   }
 }

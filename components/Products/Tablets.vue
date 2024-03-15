@@ -25,7 +25,9 @@
         :key="i"
         class="pst-content-wrapper"
       >
-        <NuxtImg :src="tbl.variations[0].images[0]" class="pst-content-img" />
+        <div class="pst-img-wrapper">
+          <NuxtImg :src="tbl.variations[0].images[0]" class="pst-content-img" />
+        </div>
         <div class="pst-content">
           <div class="pst-content-title">{{ tbl.title }}</div>
           <p class="pst-content-desc">{{ tbl.description.split("\n")[0] }}</p>
@@ -35,8 +37,8 @@
         </div>
       </div>
     </div>
-    <div v-else>
-      
+    <div v-else class="pst-loading-wrapper">
+      <div v-for="(_, i) in [1,2,3,4]" class="pst-content-loading"></div>
     </div>
   </section>
 </template>
@@ -51,6 +53,7 @@ const tablets = computed(() => props.products.filter((el) => el.category === "ta
 </script>
 
 <style lang="scss" scoped>
+@use "~/assets/scss/_animation.scss";
 .prd-section-tablet {
   position: relative;
   width: 100%;
@@ -104,8 +107,13 @@ const tablets = computed(() => props.products.filter((el) => el.category === "ta
     .pst-content-wrapper {
       position: relative;
       background-color: #f7f7f7;
-      .pst-content-img {
-        object-fit: cover;
+      .pst-img-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .pst-content-img {
+          object-fit: cover;
+        }
       }
       .pst-content {
         padding: 0 32px 32px;
@@ -130,6 +138,19 @@ const tablets = computed(() => props.products.filter((el) => el.category === "ta
           color: black;
         }
       }
+    }
+  }
+  .pst-loading-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+    padding: 16px 0 72px;
+    .pst-content-loading {
+      height: 360px;
+      width: 100%;
+      background-color: rgba(192, 192, 192, 0.863);
+      border-radius: 25px;
+      animation: pulse 2s infinite;
     }
   }
 }

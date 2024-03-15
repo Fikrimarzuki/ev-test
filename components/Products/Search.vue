@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="psw-right-loading-wrapper" v-if="isLoading">
-        <div v-for="(pr, i) in [1,2,3]" :key="i" class="psw-loading-content"></div>
+        <div v-for="(_, i) in [1,2,3]" :key="i" class="psw-loading-content"></div>
       </div>
       <div class="psw-right-not-found" v-else-if="!products.length">
         Maaf, hasil tidak ditemukan
@@ -60,11 +60,13 @@
 <script lang="ts" setup>
 import { useProductStore } from "~/stores/products.store";
 import type { IProductFilter } from "~/types/product.interface";
+defineProps({
+  isLoading: { type: Boolean, default: false }
+})
 const route = useRoute();
 const router = useRouter();
 const notification = useNotif()
 const store = useProductStore();
-const isLoading = ref(false);
 const keyword = ref("");
 const products = computed(() => store.getProducts);
 const accordionMenu = ref([
@@ -126,9 +128,11 @@ const handleClickAccordion = (q: string, v: string | number) => {
 // watch(() => route.query, () => handleFetchProduct())
 
 // handleFetchProduct()
+onMounted(() => keyword.value = route.query.keyword as string || "")
 </script>
 
 <style lang="scss" scoped>
+@use "~/assets/scss/_animation.scss";
 .product-search-section {
   max-width: 1440px;
   margin: auto;
@@ -204,8 +208,10 @@ const handleClickAccordion = (q: string, v: string | number) => {
       .psw-loading-content {
         height: 172px;
         background-color: rgb(201, 201, 201);
-        margin-bottom: 16px;
+        margin-bottom: 32px;
         border-radius: 15px;
+        width: 100%;
+        animation: pulse 1s infinite;
         &:last-child {
           margin-bottom: 0;
         }

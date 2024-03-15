@@ -37,8 +37,8 @@
         </div>
       </div>
     </div>
-    <div v-else>
-      
+    <div v-else class="psg-loading-wrapper">
+      <div v-for="(_, i) in [1,2,3,4]" class="psg-content-loading"></div>
     </div>
   </section>
 </template>
@@ -53,6 +53,7 @@ const gbuds = computed(() => props.products.filter((el) => el.category === "gala
 </script>
 
 <style lang="scss" scoped>
+@use "~/assets/scss/_animation.scss";
 .prd-section-gbuds {
   position: relative;
   width: 100%;
@@ -137,6 +138,19 @@ const gbuds = computed(() => props.products.filter((el) => el.category === "gala
           color: black;
         }
       }
+    }
+  }
+  .psg-loading-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+    padding: 16px 0 72px;
+    .psg-content-loading {
+      height: 360px;
+      width: 100%;
+      background-color: rgba(192, 192, 192, 0.863);
+      border-radius: 25px;
+      animation: pulse 2s infinite;
     }
   }
 }

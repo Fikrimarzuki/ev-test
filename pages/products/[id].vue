@@ -1,12 +1,16 @@
 <template>
   <section class="product-page-section">
-    <div class="product-page-wrapper" v-if="!isLoading">
+    <div class="product-page-wrapper" v-if="!isLoading && product.id">
       <div class="product-img-wrapper">
         <div class="product-back-nav" @click="router.go(-1)">
           <Icon name="material-symbols:undo-rounded" class="icon-back" />Kembali ke halaman sebelumnya
         </div>
-        <NuxtImg :src="variations[varIndex].images[varImgIndex]" class="product-img"/>
-        <div class="img-control-wrapper-bottom">
+        <NuxtImg
+          :src="variations[varIndex].images[varImgIndex]"
+          class="product-img anima-show"
+          id="productImage"
+        />
+        <div class="img-control-wrapper-bottom" v-if="variations[varIndex].images.length > 1">
           <div class="img-control-bottom">
             <div
               v-for="(img, i) in variations[varIndex].images"
@@ -140,9 +144,13 @@
         </div>
       </div>
     </div>
-    <div v-else class="product-page-loading">
+    <div v-else-if="isLoading" class="product-page-loading">
       <div></div>
       <div></div>
+    </div>
+    <div v-else-if="!product.id" class="product-page-notfound">
+      <Icon name="ph:smiley-sad-thin" class="icon-sad" />
+      <div>Product Not found</div>
     </div>
   </section>
 </template>
@@ -152,6 +160,7 @@ import { useProductStore } from "~/stores/products.store";
 const route = useRoute();
 const router = useRouter();
 const notification = useNotif();
+const animate = useAnimation();
 const store = useProductStore();
 const product = computed(() => store.getProduct);
 const isLoading = ref(false);
@@ -159,15 +168,18 @@ const varIndex = ref(0);
 const varImgIndex = ref(0);
 const variations = computed(() => product.value?.variations || []);
 const handleClickColor = (index: number) => {
+  animate.fromToAnimation(document.getElementById("productImage"), "anima-show")
   varIndex.value = index
   varImgIndex.value = 0
 }
 const handleClickImgControl = (act: string) => {
   if (act === "left") {
     if (varImgIndex.value === 0) return
+    animate.fromToAnimation(document.getElementById("productImage"), "anima-left")
     varImgIndex.value -= 1
   } else if (act === "right") {
     if (varImgIndex.value === variations.value[varIndex.value].images.length -1) return
+    animate.fromToAnimation(document.getElementById("productImage"), "anima-right")
     varImgIndex.value += 1
   }
 }
@@ -196,6 +208,7 @@ onUnmounted(() => store.resetProduct())
 </script>
 
 <style lang="scss" scoped>
+@use "~/assets/scss/_animation.scss";
 .product-page-section {
   max-width: 1140px;
   margin: auto;
@@ -223,6 +236,16 @@ onUnmounted(() => store.resetProduct())
         position: sticky;
         top: 196px;
         width: 100%;
+        transition: all 0.5s ease-in-out;
+        &.anima-show {
+          animation: hide-show 0.5s ease-in-out;
+        }
+        &.anima-left {
+          animation: slide-right-left 0.5s ease-in-out forwards;
+        }
+        &.anima-right {
+          animation: slide-left-right 0.5s ease-in-out forwards;
+        }
       }
       .img-control-wrapper-bottom {
         display: flex;
@@ -339,6 +362,18 @@ onUnmounted(() => store.resetProduct())
       }
     }
   }
+  .product-page-notfound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: calc(100vh - 577px);
+    font-size: $text-xl;
+    .sad {
+      height: 36px;
+      width: 36px;
+    }
+  }
   .product-page-loading {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -354,21 +389,5 @@ onUnmounted(() => store.resetProduct())
     	animation: pulse 2s infinite;
     }
   }
-}
-@keyframes pulse {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-	}
-
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-	}
-
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-	}
 }
 </style>

@@ -23,7 +23,7 @@
       />
     </div>
     <div v-else>
-      <ProductsSearch />
+      <ProductsSearch :isLoading="isLoading" />
     </div>
   </div>
 </template>
